@@ -4,7 +4,6 @@
 Titel på dokumentet<br>
 Författare<br>
 Publiceringsdatum<br>
-
 <br>
 
 ## Abstract
@@ -25,20 +24,20 @@ Kort sammanfattning av dokumentet
 11. [Conclusion](#conclusion)
 
 ## Introduction
-Inledning
-Bakgrund och syfte. Eventuell översiktbild här.
+_Inledning - Bakgrund och syfte. Eventuell översiktbild här._
 
 ## Goals and Objectives
-Mål och syften
+_Mål och syften_
+
 
 ## Method
-Hur vi gjorde det. Tillvägagångssätt. Vårt sätt
+_Hur vi gjorde det. Tillvägagångssätt. Vårt sätt_
 
 ## Target Audience
-Målgrupp
+_Målgrupp_
 
 ## Document Status
-Dokumentstatus (om det finns relevant information om dokumentets status, till exempel utkast, slutfört, etc.). Tex:
+Dokumentstatus _(I enlighet med ISO 9001: Utkast → Granskad → Godkänd → Publicerad → Arkiverad)_
 > [!NOTE]  
 > My work here is not finished yet. I need, among other things, to supplement with instructions on how each component should be configured to work together as well supplement with an overview image that explains how the whole thing works.
 
