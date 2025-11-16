@@ -1,5 +1,5 @@
 # Title Page
-<img width="100" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MyLogo_2.png" align=left><br>
+<img width="100" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MyLogo_2.png" align=left>_Logon modifieras så att det passar projektet._<br>
 <br>
 _Titel på dokumentet<br>
 Författare<br>
