@@ -1,13 +1,13 @@
 # Title Page
 <img width="100" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MyLogo_2.png" align=left><br>
 <br>
-Titel på dokumentet<br>
+_Titel på dokumentet<br>
 Författare<br>
-Publiceringsdatum<br>
+Publiceringsdatum<br>_
 <br>
 
 ## Abstract
-Kort sammanfattning av dokumentet
+_Kort sammanfattning av dokumentet._
 
 ## Table of Contents
 
@@ -27,17 +27,17 @@ Kort sammanfattning av dokumentet
 _Inledning - Bakgrund och syfte. Eventuell översiktbild här._
 
 ## Goals and Objectives
-_Mål och syften_
+_Mål och syften._
 
 
 ## Method
-_Hur vi gjorde det. Tillvägagångssätt. Vårt sätt_
+_Hur vi gjorde det. Tillvägagångssätt. Vårt sätt._
 
 ## Target Audience
 _Målgrupp_
 
 ## Document Status
-Dokumentstatus _(I enlighet med ISO 9001: Utkast → Granskad → Godkänd → Publicerad → Arkiverad)_
+_Dokumentstatus (I enlighet med ISO 9001: Utkast → Granskad → Godkänd → Publicerad → Arkiverad)_
 > [!NOTE]  
 > My work here is not finished yet. I need, among other things, to supplement with instructions on how each component should be configured to work together as well supplement with an overview image that explains how the whole thing works.
 
@@ -48,17 +48,17 @@ Ansvarsfriskrivning. Tex:
 > This is intended for learning, testing, and experimentation. The emphasis is not on security or creating an operational environment suitable for production.
 
 ## Scope and Limitations
-Omfattning och begränsningar
+_Omfattning och begränsningar_
 
 ## Environment
-Miljö som användes
+_Miljö som användes_
 
 ## Acknowledgments
-Tack och erkännanden. Tex:
+_Tack och erkännanden. Tex:_
 Big thanks to all the people involved in the material I refer to in my links! I would also like to express gratitude to everyone out there, including my colleagues and friends, who are creating things that help and inspire us to continue learning and exploring this never-ending world of computer technology.
 
 ## References
-Referenser (om det behövs)
+_Referenser (om det behövs)_
 
 ## Conclusion
 Slutsats
