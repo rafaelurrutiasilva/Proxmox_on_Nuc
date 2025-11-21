@@ -32,11 +32,11 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 
 
 ## Method
-1. Proxmox VE 9.1 was downloaded from the official site: https://proxmox.com/en/downloads/proxmox-virtual-environment/iso
+1. Proxmox VE 9.1 was downloaded from the <a href src=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
 
-2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256
+2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>
 
-3. Burn the .ISO file to a USB-stick using Rufus (https://rufus.ie).
+3. Burn the .ISO file to a USB-stick using <a href src=https://rufus.ie>rufus</a>.
 
 4. Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:
    - Secure Boot disabled
@@ -83,7 +83,7 @@ Windows 10 was used for downloading and burning the Proxmox .ISO file.
 Proxmox uses a Debian base with a CLI. 
 
 ## Acknowledgments
-We would like to thank Rafael Urrutia for his continuous support and guidance and the ITi team at SMHI. 
+We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance and the ITi team at SMHI. 
 
 ## References
 _Referenser (om det behövs)_
