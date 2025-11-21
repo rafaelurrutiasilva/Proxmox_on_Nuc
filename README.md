@@ -1,5 +1,5 @@
-# Title Page
-<img width="100" alt="MyLogo" src="https://github.com/rafaelurrutiasilva/images/blob/main/logos/MyLogo_2.png" align=left>_Logon modifieras så att det passar projektet._<br>
+# Proxmox on Nuc Project
+<img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc.png?raw=true" align=left>_Logon modifieras så att det passar projektet._<br>
 <br>
 _Titel på dokumentet<br>
 Författare<br>
