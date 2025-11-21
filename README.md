@@ -1,22 +1,20 @@
 # Installing Proxmox on an Asus PN64
-<img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc.png?raw=true" align=left><br>
+<img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc.png?raw=true" align=left>
+
 **Installing Proxmox on an Asus PN64**
 <br>**Authors:** _Filip Andersson, Jonatan Högild_<br>
-Publiceringsdatum<br>
-<br>
+Publiceringsdatum<br><br>
 
 ## Abstract
-First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
-<br><br>
-## Introduction<br>
 
-### Greetings!
+**Greetings!**
 _...and welcome to our project. This project is a part of a series of projects with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
 
 <br>**/Filip Andersson, Jonatan Högild**<br>
 <!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
-<br>
 
+<!--First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
+<br><br> -->
 
 ## Table of Contents
 
@@ -32,7 +30,10 @@ _...and welcome to our project. This project is a part of a series of projects w
 10. [References](#references)
 11. [Conclusion](#conclusion)
 
+## Introduction<br>
+_This is an introduction_
 
+<br>
 
 ## Goals and Objectives
 This is part of a larger ongoing IaC-project (Infrastructure as Code) that will use Proxmox as a base. 
@@ -85,14 +86,23 @@ Limitations
 * Instructions may become outdated as software updates; always verify with the official documentation.
 
 ## Environment
-Windows 10 was used for downloading and burning the Proxmox .ISO file. 
-Proxmox uses a Debian base with a CLI. 
+**Hardware**
+- Asus PN64 ax210NGW 16 GB (See reference)
+- USB flash drive 64 GB
+
+**Software**
+- Windows 10 was used for downloading Proxmox
+- Rufus 3.2 was used for burning the Proxmox .ISO file onto the USB.
+- Proxmox uses a Debian base with a CLI.
 
 ## Acknowledgments
-We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance and the ITi team at SMHI Norrköping. 
+We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance and the ITI team at SMHI Norrköping. 
 
 ## References
-_Referenser (om det behövs)_
+- ![Proxmox Requirements](ttps://www.proxmox.com/en/products/proxmox-virtual-environment/requirements)
+- ![Proxmox ISO file download](https://proxmox.com/en/downloads/proxmox-virtual-environment/iso)
+- ![The ASUS device we used](https://www.asus.com/displays-desktops/mini-pcs/pn-series/asus-expertcenter-pn64/techspec/)
+- ![Rufus software for burning the ISO image](https://rufus.ie/en/)
 
 ## Conclusion
 Slutsats
