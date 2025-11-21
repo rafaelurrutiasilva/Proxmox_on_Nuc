@@ -1,13 +1,22 @@
 # Installing Proxmox on an Asus PN64
-<img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc.png?raw=true" align=left>_Logon modifieras så att det passar projektet._<br>
-<br>
-_Titel på dokumentet<br>
-Filip Andersson, Jonatan Högild<br>
-Publiceringsdatum<br>_
+<img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc.png?raw=true" align=left><br>
+**Installing Proxmox on an Asus PN64**
+<br>**Authors:** _Filip Andersson, Jonatan Högild_<br>
+Publiceringsdatum<br>
 <br>
 
 ## Abstract
-Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). 
+First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
+<br><br>
+## Introduction<br>
+
+### Greetings!
+_...and welcome to our project. This project is a part of a series of projects with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
+
+<br>**/Filip Andersson, Jonatan Högild**<br>
+<!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
+<br>
+
 
 ## Table of Contents
 
@@ -23,8 +32,8 @@ Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC).
 10. [References](#references)
 11. [Conclusion](#conclusion)
 
-## Introduction
-_Inledning - Bakgrund och syfte. Eventuell översiktbild här._
+
+<br>
 
 ## Goals and Objectives
 This is part of a larger ongoing IaC-project (Infrastructure as Code) that will use Proxmox as a base. 
