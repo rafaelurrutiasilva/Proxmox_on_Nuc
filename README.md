@@ -1,4 +1,5 @@
 # Installing Proxmox on an Asus PN64
+<br>
 <img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc.png?raw=true" align=left>
 
 **Installing Proxmox on an Asus PN64**
@@ -35,8 +36,8 @@ _...and welcome to our project. This project is a part of a series of projects w
 
 ## Goals and Objectives
 This is part of a larger ongoing IaC-project (Infrastructure as Code) that will use Proxmox as a base. 
-The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain. 
-
+The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain. <br>
+<br>
 
 ## Method
 1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
@@ -57,50 +58,57 @@ The goal of this project is to build a complete IT-environment and gain a deeper
   
 6. Once installation is complete, configure network settings:
    - Open /etc/network/interfaces
+<br>
 
 ## Target Audience
 This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
 This repo is also part of a larger project aimed at people interested in learning about IaC, and building such an environment from scratch. 
+<br>
 
 ## Document Status
 > [!NOTE]  
 > This is a work in progress.<br>
 > This repo is part of a larger ongoing project.
-
+<br>
 
 ## Disclaimer
 > [!CAUTION]
 > This is intended for learning, testing, and experimentation. The emphasis is not on security or creating an operational environment suitable for production.
 
 ## Scope and Limitations
-Scope
+**Scope**
 * Step-by-step instructions for installing Proxmox VE.
 * Basic post-installation configuration.
 
-Limitations
+**Limitations**
 * This guide is not intended for production-grade, multi-node clusters or advanced HA setups.
 * Hardware compatibility varies; If unsure, check <a href=https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements>hardware requirements</a> before proceeding. 
 * Network configuration is for now limited to a single-node setup and may not apply to complex environments.
 * Instructions may become outdated as software updates; always verify with the official documentation.
+<br>
 
 ## Environment
 **Hardware**
 - Asus PN64 ax210NGW 16 GB (See reference)
 - USB flash drive 64 GB
+<br>
 
 **Software**
 - Windows 10 was used for downloading Proxmox
 - Rufus 3.2 was used for burning the Proxmox .ISO file onto the USB.
 - Proxmox uses a Debian base with a CLI.
+<br>
 
 ## Acknowledgments
 We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance and the ITI team at SMHI Norrköping. 
+<br>
 
 ## References
 - ![Proxmox Requirements](ttps://www.proxmox.com/en/products/proxmox-virtual-environment/requirements)
 - ![Proxmox ISO file download](https://proxmox.com/en/downloads/proxmox-virtual-environment/iso)
 - ![The ASUS device we used](https://www.asus.com/displays-desktops/mini-pcs/pn-series/asus-expertcenter-pn64/techspec/)
 - ![Rufus software for burning the ISO image](https://rufus.ie/en/)
+<br>
 
 ## Conclusion
 Slutsats
