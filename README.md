@@ -3,18 +3,13 @@
 
 **Installing Proxmox on an Asus PN64**
 <br>**Authors:** _Filip Andersson, Jonatan Högild_<br>
-Publiceringsdatum<br><br>
+Publiceringsdatum<br>
 
 ## Abstract
+First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
+<br><br>
 
-**Greetings!**
-_...and welcome to our project. This project is a part of a series of projects with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
-
-<br>**/Filip Andersson, Jonatan Högild**<br>
-<!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
-
-<!--First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
-<br><br> -->
+<br>
 
 ## Table of Contents
 
@@ -31,8 +26,11 @@ _...and welcome to our project. This project is a part of a series of projects w
 11. [Conclusion](#conclusion)
 
 ## Introduction<br>
-_This is an introduction_
+**Greetings!**
+_...and welcome to our project. This project is a part of a series of projects with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
 
+**/Filip Andersson, Jonatan Högild**
+<!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
 <br>
 
 ## Goals and Objectives
