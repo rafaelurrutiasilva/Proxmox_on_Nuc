@@ -33,7 +33,6 @@ _...and welcome to our project. This project is a part of a series of projects w
 11. [Conclusion](#conclusion)
 
 
-<br>
 
 ## Goals and Objectives
 This is part of a larger ongoing IaC-project (Infrastructure as Code) that will use Proxmox as a base. 
@@ -61,11 +60,12 @@ The goal of this project is to build a complete IT-environment and gain a deeper
    - Open /etc/network/interfaces
 
 ## Target Audience
-_Målgrupp_
+This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
+This repo is also part of a larger project aimed at people interested in learning about IaC, and building such an environment from scratch. 
 
 ## Document Status
 > [!NOTE]  
-> This is a work in progress.
+> This is a work in progress.<br>
 > This repo is part of a larger ongoing project.
 
 
@@ -75,24 +75,21 @@ _Målgrupp_
 
 ## Scope and Limitations
 Scope
-* Provide step-by-step instructions for installing Proxmox VE on consumer or enterprise PC hardware.
-* Cover basic system preparation (BIOS settings, virtualization options, storage configuration, network setup).
-* Include post-installation essentials such as initial configuration, web UI access, storage setup, and basic VM/LXC creation.
+* Step-by-step instructions for installing Proxmox VE.
+* Basic post-installation configuration.
 
 Limitations
 * This guide is not intended for production-grade, multi-node clusters or advanced HA setups.
-* Hardware compatibility varies; the repository cannot guarantee support for all motherboards, NICs, or RAID controllers.
-* Does not cover enterprise features such as Ceph clusters, advanced storage backends, or commercial subscription setups.
-* Network configurations are limited to basic setups (e.g., single NIC, simple bridges) and may not apply to complex environments.
-* Security hardening is only covered at a basic level—users are responsible for implementing their own security policies.
-* Instructions may become outdated as Proxmox VE updates; always verify with the official documentation.
+* Hardware compatibility varies; If unsure, check <a href=https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements>hardware requirements</a> before proceeding. 
+* Network configuration is for now limited to a single-node setup and may not apply to complex environments.
+* Instructions may become outdated as software updates; always verify with the official documentation.
 
 ## Environment
 Windows 10 was used for downloading and burning the Proxmox .ISO file. 
 Proxmox uses a Debian base with a CLI. 
 
 ## Acknowledgments
-We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance and the ITi team at SMHI. 
+We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance and the ITi team at SMHI Norrköping. 
 
 ## References
 _Referenser (om det behövs)_
