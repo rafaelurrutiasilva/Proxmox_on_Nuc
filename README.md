@@ -58,10 +58,28 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 5. Save the changes and restart, then follow the installation instructions:
    - Ext4 will be used for this project.
    - 10 GB swap space was added.
-   - Network settings can be added now, or later.
-  
-6. Once installation is complete, configure network settings:
-   - Open /etc/network/interfaces
+
+6. Once installed, the system will reboot into a CLI. Enter root as user and log in.
+
+7. Network configuration is found in **/etc/network/interfaces** and might look like this:
+   <pre>
+      auto lo
+      iface lo inet loopback
+
+      iface enp2s0 inet manual
+
+      auto vmbr0
+      iface vmbr0 inet static
+      address 10.208.12.20/24
+      gateway 10.208.12.1
+      bridge_ports enp2s0
+      bridge_stp off
+      bridge_fd 0
+   </pre>
+
+8. Test Internet connectivity with <pre>ping 8.8.8.8</pre>
+
+9. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
 
 ### Network Configuration
 - Text
