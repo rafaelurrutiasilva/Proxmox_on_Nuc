@@ -1,14 +1,15 @@
 # Installing Proxmox on an Asus PN64
-<br>
-<img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc.png?raw=true" align=left>
 
 **Installing Proxmox on an Asus PN64**
-<br>**Authors:** _Filip Andersson, Jonatan Högild_<br>
+<br>**Authors:** _Filip Andersson and Jonatan Högild_<br>
 Publiceringsdatum<br>
 
 ## Abstract
 First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
-<br><br>
+<br>
+
+<br>
+<img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc_smaller.png?raw=true" allign=center>
 
 <br>
 
@@ -24,13 +25,13 @@ First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/
 8. [Environment](#environment)
 9. [Acknowledgments](#acknowledgments)
 10. [References](#references)
-11. [Conclusion](#conclusion)
+<!-- 11. [Conclusion](#conclusion) -->
 
 ## Introduction<br>
 **Greetings!**
 _...and welcome to our project. This project is a part of a series of projects with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
 
-**/Filip Andersson, Jonatan Högild**
+**Filip Andersson and Jonatan Högild**
 <!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
 <br>
 
@@ -40,6 +41,9 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 <br>
 
 ## Method
+
+### Installation
+
 1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
 
 2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>
@@ -58,6 +62,9 @@ The goal of this project is to build a complete IT-environment and gain a deeper
   
 6. Once installation is complete, configure network settings:
    - Open /etc/network/interfaces
+
+### Network Configuration
+- Text
 <br>
 
 ## Target Audience
@@ -104,11 +111,13 @@ We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urru
 <br>
 
 ## References
-- ![Proxmox Requirements](ttps://www.proxmox.com/en/products/proxmox-virtual-environment/requirements)
-- ![Proxmox ISO file download](https://proxmox.com/en/downloads/proxmox-virtual-environment/iso)
-- ![The ASUS device we used](https://www.asus.com/displays-desktops/mini-pcs/pn-series/asus-expertcenter-pn64/techspec/)
-- ![Rufus software for burning the ISO image](https://rufus.ie/en/)
+- [Proxmox Requirements](ttps://www.proxmox.com/en/products/proxmox-virtual-environment/requirements)
+- [Proxmox ISO file download](https://proxmox.com/en/downloads/proxmox-virtual-environment/iso)
+- [The ASUS device we used](https://www.asus.com/displays-desktops/mini-pcs/pn-series/asus-expertcenter-pn64/techspec/)
+- [Rufus software for burning the ISO image](https://rufus.ie/en/)
 <br>
 
+<!--
 ## Conclusion
 Slutsats
+-->
