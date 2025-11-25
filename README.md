@@ -59,6 +59,9 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 
 ### Network Configuration
 
+> [!NOTE]
+> If you are trying this on a home network, this isnt relevant to you. However its one issue that might occure if youre trying this on a similar setup and for general documentation purpose - Since we’re in an larger institution/office, we have different isolated networks within the Network.
+
 7. Network configuration is found in **/etc/network/interfaces** and might look like this:
    <pre>
       auto lo
@@ -83,7 +86,7 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 
 Dokumentation 25/11
 
-If you are trying this on a home network, this isnt relevant to you. However its one issue that might occure if youre trying this on a similar setup and for general documentation purpose - Since we’re in an larger institution/office, we have different isolated networks within the Network.
+
 
 Vad är fel? Steg för steg
 
