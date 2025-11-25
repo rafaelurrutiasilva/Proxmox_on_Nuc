@@ -36,39 +36,38 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 <br><br>
 
 ## Method
-<br>
 
 ### Installation
 <br>
 
-**1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.**
+1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
 
 <br>
 
-**2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>**
+2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>
 <br>
 
-**3. Burn the .ISO file to a USB-stick using <a href=https://rufus.ie>rufus</a>.**
+3. Burn the .ISO file to a USB-stick using <a href=https://rufus.ie>rufus</a>.
 <br><br>
 
-**4. Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:**
+4. Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:
    - Secure Boot disabled
    - Intel VT-x enabled
    - Change boot order to begin with the USB-stick.
 <br>
 
-**5. Save the changes and restart, then follow the installation instructions:**
+5. Save the changes and restart, then follow the installation instructions:
    - Ext4 will be used for this project.
    - 10 GB swap space was added.
 <br><br>
 
-**6. Once installed, the system will reboot into a CLI. Enter root as user and log in.**
-<br><br>
+6. Once installed, the system will reboot into a CLI. Enter root as user and log in.
+<br><br><br>
 
 ### Network Configuration
-<br><br>
+<br>
 
-**7. Network configuration is found in **/etc/network/interfaces** and might look like this:**
+7. Network configuration is found in **/etc/network/interfaces** and might look like this:
    <pre>
       auto lo
       iface lo inet loopback
@@ -108,16 +107,16 @@ pinpointing the error by the process of elimination and conventional walkthrough
 and we were told to mention whos fault it was (Ha ha)  but we are just interns so we cant but it wasnt our fault.
 <br><br><br>
 
-**8. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>**
+8. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>
 <br><br>
 
-**9. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>**
+9. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
 <br><br>
 
 ## Target Audience
 This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
 This repo is also part of a larger project aimed at people interested in learning about IaC, and building such an environment from scratch. 
-<br>
+<br><br>
 
 ## Document Status
 > [!NOTE]  
@@ -128,6 +127,7 @@ This repo is also part of a larger project aimed at people interested in learnin
 ## Disclaimer
 > [!CAUTION]
 > This is intended for learning, testing, and experimentation. The emphasis is not on security or creating an operational environment suitable for production.
+<br>
 
 ## Scope and Limitations
 **Scope**
@@ -154,7 +154,7 @@ This repo is also part of a larger project aimed at people interested in learnin
 <br>
 
 ## Acknowledgments
-We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance and the ITI team at SMHI Norrköping. 
+We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance, And then the skilled network technichians <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson, and the ITI team at SMHI Norrköping. 
 <br>
 
 ## References
