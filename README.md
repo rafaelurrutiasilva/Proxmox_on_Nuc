@@ -7,9 +7,6 @@ Publiceringsdatum<br>
 ## Abstract
 First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
 <br>
-<br>
-<!-- <img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc_smaller.png?raw=true" allign=center> -->
-<br>
 
 ## Table of Contents
 
