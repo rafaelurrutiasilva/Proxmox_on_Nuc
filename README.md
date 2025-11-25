@@ -88,25 +88,24 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 
 <br>
 
-> [!NOTE]
-> If you are trying this on a home network, then you can skip this next part, to part 8.
-> However if youre trying this on a similar setup or if you are interested, for general documentation purpose:
->> Since we’re on an enterprise network, we have different isolated networks within the Network.
->> After installation, we were given a network segment to lab on within our enterprise network.
-However, we had issues connecting to our default gateway, leading to troubleshooting seasion.
+>[!NOTE]
+> Potential issue, if you didnt have an issue you can skip to part 8
+
+> Troubleshooting, for general documentation purpose:
+Since we’re on an enterprise network, we have different isolated networks within the Network. After installation, we were given a network segment to lab on within our enterprise network.However, we had issues connecting to our default gateway, leading to troubleshooting seasion.
 We got help from some of the network technicians in our department who helped us solve this issue, 
 so thanks to Robert Brokull, Marcus Jehrlander and Martin Lennartsson. 
 
->> To troubleshoot this, like in all areas of IT - breaking it down to smaller pieces (not actually), 
+To troubleshoot this, like in all areas of IT - breaking it down to smaller pieces (not actually), 
 pinpointing the error by the process of elimination and conventional walkthrough of the OSI layers.
->> - We tried different syntax for the config file, 
->> - We tried running without the virtual bridge.
->> - We tried different cables. 
->> - We thought it could have something to do with Switch port security.
->> - We checked the ARP table on the server and noted that it was empty.
->> - We did a packet capture on the interface and the switch and saw that ARP requests was being sent, but no replies were being sent.
->> - We thought it could have something to do with our port channel not being configured to accept VLAN
->> - Then at last, it turned out SVI (Switch Virtual Interface) wasnt properly configured, 
+- We tried different syntax for the config file, 
+- We tried running without the virtual bridge.
+- We tried different cables. 
+- We thought it could have something to do with Switch port security.
+- We checked the ARP table on the server and noted that it was empty.
+- We did a packet capture on the interface and the switch and saw that ARP requests was being sent, but no replies were being sent.
+- We thought it could have something to do with our port channel not being configured to accept VLAN
+- Then at last, it turned out SVI (Switch Virtual Interface) wasnt properly configured, 
 and we were told to mention whos fault it was (Ha ha)  but we are just interns so we cant but it wasnt our fault.
 <br><br><br>
 
