@@ -5,7 +5,7 @@
 Publiceringsdatum<br>
 
 ## Abstract
-First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
+First project in a series of projects during our internship at SMHI (The Swedish Meteorological and Hydrological Institute), Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
 <br>
 
 ## Table of Contents
@@ -24,7 +24,7 @@ First internship project, Installation of Proxmox on an Asus PN64 ax210NGW (NUC/
 
 ## Introduction<br>
 **Greetings!**
-_...and welcome to our project. This project is a part of a series of projects with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
+_...and welcome to our project. This project is a the first project in a series of projects with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department (The Swedish Meteorological and Hydrological Institute) headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
 
 **Filip Andersson and Jonatan Högild**
 <!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
@@ -124,7 +124,7 @@ We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urru
 <br>
 
 ## References
-- [Proxmox Requirements](ttps://www.proxmox.com/en/products/proxmox-virtual-environment/requirements)
+- [Proxmox Requirements](https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements)
 - [Proxmox ISO file download](https://proxmox.com/en/downloads/proxmox-virtual-environment/iso)
 - [The ASUS device we used](https://www.asus.com/displays-desktops/mini-pcs/pn-series/asus-expertcenter-pn64/techspec/)
 - [Rufus software for burning the ISO image](https://rufus.ie/en/)
