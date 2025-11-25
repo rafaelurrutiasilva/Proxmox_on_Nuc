@@ -25,7 +25,7 @@ First project in a series of projects during our internship at SMHI (The Swedish
 
 ## Introduction<br>
 **Greetings!**
-_...and welcome to our project. This project is a the first project in a series of projects with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department (The Swedish Meteorological and Hydrological Institute) headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
+_...and welcome to our project. This project is a the first project <a href="[in a series of projects](https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md)" > with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department (The Swedish Meteorological and Hydrological Institute) headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
 
 **Filip Andersson and Jonatan Högild**
 <!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
@@ -35,6 +35,8 @@ _...and welcome to our project. This project is a the first project in a series 
 This is part of a larger ongoing IaC-project (Infrastructure as Code) that will use Proxmox as a base. 
 The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain. <br>
 <br><br>
+
+<!-- Structure picture here -->
 
 ## Method
 
