@@ -85,7 +85,9 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 <!-- 
 
 Dokumentation 25/11
-
+After installation, we were given a network segment to lab on within our enterprise network.
+However, we had issues connecting to our default gateway, leading to troubleshooting seasion. 
+We tried different syntax for the config file, running without the virtual bridge, different cables, 
 
 
 Vad är fel? Steg för steg
