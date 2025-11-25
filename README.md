@@ -155,7 +155,7 @@ This repo is also part of a larger project aimed at people interested in learnin
 
 ## Acknowledgments
 We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance, And then the skilled network technichians <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson, and the ITI team at SMHI Norrköping. 
-<br>
+<br><br>
 
 ## References
 - [Proxmox Requirements](https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements)
