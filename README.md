@@ -39,30 +39,36 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 <br>
 
 ### Installation
+<br>
 
-1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
+**1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.**
 
-2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>
+<br>
 
-3. Burn the .ISO file to a USB-stick using <a href=https://rufus.ie>rufus</a>.
+**2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>**
+<br>
 
-4. Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:
+**3. Burn the .ISO file to a USB-stick using <a href=https://rufus.ie>rufus</a>.**
+<br><br>
+
+**4. Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:**
    - Secure Boot disabled
    - Intel VT-x enabled
    - Change boot order to begin with the USB-stick.
+<br>
 
-5. Save the changes and restart, then follow the installation instructions:
+**5. Save the changes and restart, then follow the installation instructions:**
    - Ext4 will be used for this project.
    - 10 GB swap space was added.
+<br><br>
 
-6. Once installed, the system will reboot into a CLI. Enter root as user and log in.
+**6. Once installed, the system will reboot into a CLI. Enter root as user and log in.**
+<br><br>
 
 ### Network Configuration
+<br><br>
 
-> [!NOTE]
-> If you are trying this on a home network, this isnt relevant to you. However its one issue that might occure if youre trying this on a similar setup and for general documentation purpose - Since we’re on an enterprise network, we have different isolated networks within the Network.
-
-7. Network configuration is found in **/etc/network/interfaces** and might look like this:
+**7. Network configuration is found in **/etc/network/interfaces** and might look like this:**
    <pre>
       auto lo
       iface lo inet loopback
@@ -71,56 +77,41 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 
       auto vmbr0
       iface vmbr0 inet static
-      address 10.208.12.20/24
-      gateway 10.208.12.1
+      address xxx.xxx.xxx.xxx/xx
+      gateway xxx.xxx.xxx.xxx
       bridge_ports enp2s0
       bridge_stp off
       bridge_fd 0
    </pre>
 
-8. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>
+<br>
 
-9. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
+> [!NOTE]
+> If you are trying this on a home network, then you can skip this next part, to part 8.
+> However if youre trying this on a similar setup or if you are interested, for general documentation purpose:
+>> Since we’re on an enterprise network, we have different isolated networks within the Network.
+>> After installation, we were given a network segment to lab on within our enterprise network.
+However, we had issues connecting to our default gateway, leading to troubleshooting seasion.
+We got help from some of the network technicians in our department who helped us solve this issue, 
+so thanks to Robert Brokull, Marcus Jehrlander and Martin Lennartsson. 
 
-<!-- 
+>> To troubleshoot this, like in all areas of IT - breaking it down to smaller pieces (not actually), 
+pinpointing the error by the process of elimination and conventional walkthrough of the OSI layers.
+>> - We tried different syntax for the config file, 
+>> - We tried running without the virtual bridge.
+>> - We tried different cables. 
+>> - We thought it could have something to do with Switch port security.
+>> - We checked the ARP table on the server and noted that it was empty.
+>> - We did a packet capture on the interface and the switch and saw that ARP requests was being sent, but no replies were being sent.
+>> - We thought it could have something to do with our port channel not being configured to accept VLAN
+>> - Then at last, it turned out SVI (Switch Virtual Interface) wasnt properly configured, 
+and we were told to mention whos fault it was (Ha ha)  but we are just interns so we cant but it wasnt our fault.
+<br><br><br>
 
-Dokumentation 25/11
-After installation, we were given a network segment to lab on within our enterprise network.
-However, we had issues connecting to our default gateway, leading to troubleshooting seasion. 
-We tried different syntax for the config file, running without the virtual bridge, different cables, 
+**8. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>**
+<br><br>
 
-
-Vad är fel? Steg för steg
-
-- Vi skulle fixa nätverksanslutningsproblemet
-Vi kan inte komma åt gateway och inte pinga
-
-Vi har noterat ett altname till enp2s0, vilket vi funderar på vad det är (förmodligen proxmox)
-
-Vi tar hjälp av Nätverks killarna (Robert, Marcus, Martin, )
-- Testat olika kablar, funkar inte
--  Testat lite olika syntax I konfigurationsfilen, gör ingen skillnad
-- testat ethernet uttagen
-- testat köra utan proxmox virtuella brygga
-- testat ta bort enxf4 interfacet som är altname till ethernet
-- switch gateway säkerhet
-- tog hjälp av AI, altname är ett sätt att förutse predictable mac adresser (?)
-- Porten skickar data, skickar stp meddelande men ingen arp
-- Robert testar packet capture på switchen
-- Den skickar in men fåt inge svar, den arpar
-
-- ARP Address Resolution Protocol, translates mac addresses to IP-addresses, every connected device sends an ARP request to the switch and recieves an ARP reply. On the client and server you have arp tables, keeping track of which mac address belongs to which ip address.
-
-- Martin kom på att det kan ha att göra med att vårat VLAN inte är konfigurerat på port channel
-
-
-
-Github: 
-@robertbrokull
-
--->
-
-
+**9. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>**
 <br><br>
 
 ## Target Audience
