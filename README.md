@@ -21,6 +21,7 @@ First project in a series of projects during our internship at SMHI (The Swedish
 9. [Acknowledgments](#acknowledgments)
 10. [References](#references)
 <!-- 11. [Conclusion](#conclusion) -->
+<br>
 
 ## Introduction<br>
 **Greetings!**
