@@ -33,9 +33,10 @@ _...and welcome to our project. This project is a the first project in a series 
 ## Goals and Objectives
 This is part of a larger ongoing IaC-project (Infrastructure as Code) that will use Proxmox as a base. 
 The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain. <br>
-<br>
+<br><br>
 
 ## Method
+<br>
 
 ### Installation
 
@@ -55,6 +56,8 @@ The goal of this project is to build a complete IT-environment and gain a deeper
    - 10 GB swap space was added.
 
 6. Once installed, the system will reboot into a CLI. Enter root as user and log in.
+
+### Network Configuration
 
 7. Network configuration is found in **/etc/network/interfaces** and might look like this:
    <pre>
@@ -76,9 +79,44 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 
 9. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
 
-### Network Configuration
-- Text
-<br>
+<!-- 
+
+Dokumentation 25/11
+
+If you are trying this on a home network, this isnt relevant to you. However its one issue that might occure if youre trying this on a similar setup and for general documentation purpose - Since we’re in an larger institution/office, we have different isolated networks within the Network.
+
+Vad är fel? Steg för steg
+
+- Vi skulle fixa nätverksanslutningsproblemet
+Vi kan inte komma åt gateway och inte pinga
+
+Vi har noterat ett altname till enp2s0, vilket vi funderar på vad det är (förmodligen proxmox)
+
+Vi tar hjälp av Nätverks killarna (Robert, Marcus, Martin, )
+- Testat olika kablar, funkar inte
+-  Testat lite olika syntax I konfigurationsfilen, gör ingen skillnad
+- testat ethernet uttagen
+- testat köra utan proxmox virtuella brygga
+- testat ta bort enxf4 interfacet som är altname till ethernet
+- switch gateway säkerhet
+- tog hjälp av AI, altname är ett sätt att förutse predictable mac adresser (?)
+- Porten skickar data, skickar stp meddelande men ingen arp
+- Robert testar packet capture på switchen
+- Den skickar in men fåt inge svar, den arpar
+
+- ARP Address Resolution Protocol, translates mac addresses to IP-addresses, every connected device sends an ARP request to the switch and recieves an ARP reply. On the client and server you have arp tables, keeping track of which mac address belongs to which ip address.
+
+- Martin kom på att det kan ha att göra med att vårat VLAN inte är konfigurerat på port channel
+
+
+
+Github: 
+@robertbrokull
+
+-->
+
+
+<br><br>
 
 ## Target Audience
 This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
