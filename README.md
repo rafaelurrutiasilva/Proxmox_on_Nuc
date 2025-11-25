@@ -60,7 +60,7 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 ### Network Configuration
 
 > [!NOTE]
-> If you are trying this on a home network, this isnt relevant to you. However its one issue that might occure if youre trying this on a similar setup and for general documentation purpose - Since we’re in an larger institution/office, we have different isolated networks within the Network.
+> If you are trying this on a home network, this isnt relevant to you. However its one issue that might occure if youre trying this on a similar setup and for general documentation purpose - Since we’re on an enterprise network, we have different isolated networks within the Network.
 
 7. Network configuration is found in **/etc/network/interfaces** and might look like this:
    <pre>
@@ -78,7 +78,7 @@ The goal of this project is to build a complete IT-environment and gain a deeper
       bridge_fd 0
    </pre>
 
-8. Test Internet connectivity with <pre>ping 8.8.8.8</pre>
+8. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>
 
 9. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
 
