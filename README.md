@@ -25,7 +25,7 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
 
 ## 1. Introduction<br>
 **Greetings!**
-_...and welcome to our project. This project is a the first project <a href="[in a series of projects](https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md)" > with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department (The Swedish Meteorological and Hydrological Institute) headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
+_...and welcome to our project. This project is a the first project <a href="[in a series of projects](https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md)" > with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on [SMHI's](https://www.smhi.se/en/about-smhi) IT-department at the headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
 
 **<a href="https://github.com/Filipanderssondev">Filip Andersson</a> and <a href="https://github.com/JonatanHogild">Jonatan Högild</a>**
 <!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
@@ -91,7 +91,7 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 > [!NOTE]
 > If you didnt have an issue you can skip to part 
 
-> 3.2.2 We were unable to connect to our default gateway, leading to troubleshooting a seasion. For documentational purpose and potential troubleshooting aid:
+3.2.2 We were unable to connect to our default gateway, leading to troubleshooting a seasion. For documentational purpose and potential troubleshooting aid:
 Since we’re on an enterprise network, we have different isolated networks within the Network. After installation, we were given a network segment to lab on within our enterprise network.However, .
 We got help from some of the network technicians in our department who helped us solve this issue, 
 so thanks to <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson and <a href="https://github.com/kd00r">Patrik</a>
