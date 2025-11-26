@@ -10,7 +10,7 @@ First project in a series of projects during our internship at SMHI (The Swedish
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
+1. [Introduction](#1.introduction)
 2. [Goals and Objectives](#goals-and-objectives)
 3. [Method](#method)
 4. [Target Audience](#target-audience)
