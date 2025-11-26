@@ -10,17 +10,17 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
 
 ## Table of Contents
 
-1. [Introduction](#1.introduction)
-2. [Goals and Objectives](https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/README.md#2-goals-and-objectives)
-3. [Method](#method)
+1. [Introduction](##1.introduction)
+2. [Goals and Objectives](##)
+3. [Method](##method)
 4. [Target Audience](##-4.-Target-Audience)
-5. [Document Status](#document-status)
-6. [Disclaimer](#disclaimer)
-7. [Scope and Limitations](#scope-and-limitations)
-8. [Environment](#environment)
-9. [Acknowledgments](#acknowledgments)
-10. [References](#references)
-<!-- 11. [Conclusion](#conclusion) -->
+5. [Document Status](##document-status)
+6. [Disclaimer](##disclaimer)
+7. [Scope and Limitations](##scope-and-limitations)
+9. [Environment](##environment)
+10. [Acknowledgments](##acknowledgments)
+11. [References](###references)
+<!-- 11. [Conclusion](##conclusion) -->
 <br>
 
 ## 1. Introduction<br>
