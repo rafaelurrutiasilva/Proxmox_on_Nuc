@@ -43,34 +43,34 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 ### 3.1. Installation
 <br>
 
-3.1.1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
+- 3.1.1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
 
 <br>
 
-3.1.2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>
+- 3.1.2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>
 <br>
 
-3.1.3. Burn the .ISO file to a USB-stick using <a href=https://rufus.ie>rufus</a>.
+- 3.1.3. Burn the .ISO file to a USB-stick using <a href=https://rufus.ie>rufus</a>.
 <br><br>
 
-3.1.4. Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:
+- 3.1.4. Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:
    - Secure Boot disabled
    - Intel VT-x enabled
    - Change boot order to begin with the USB-stick.
 <br>
 
-3.1.5. Save the changes and restart, then follow the installation instructions:
+- 3.1.5. Save the changes and restart, then follow the installation instructions:
    - Ext4 will be used for this project.
    - 10 GB swap space was added.
 <br><br>
 
-3.1.6. Once installed, the system will reboot into a CLI. Enter root as user and log in.
+- 3.1.6. Once installed, the system will reboot into a CLI. Enter root as user and log in.
 <br><br><br>
 
 ### 3.2. Network Configuration
 <br>
 
-3.2.1. Network configuration is found in **/etc/network/interfaces** and might look like this:
+- 3.2.1. Network configuration is found in **/etc/network/interfaces** and might look like this:
    <pre>
       auto lo
       iface lo inet loopback
@@ -89,9 +89,9 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 <br>
 
 > [!NOTE]
-> If you didnt have an issue you can skip to part 
+> If you didnt have an issue you can skip to part 3.2.3.
 
-3.2.2 We were unable to connect to our default gateway, leading to troubleshooting a seasion. For documentational purpose and potential troubleshooting aid:
+- 3.2.2 We were unable to connect to our default gateway, leading to troubleshooting a seasion. For documentational purpose and potential troubleshooting aid:
 Since we’re on an enterprise network, we have different isolated networks within the Network. After installation, we were given a network segment to lab on within our enterprise network.However, .
 We got help from some of the network technicians in our department who helped us solve this issue, 
 so thanks to <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson and <a href="https://github.com/kd00r">Patrik</a>
@@ -109,10 +109,10 @@ localizing the error by the process of elimination and conventional walkthrough 
 and we were told to mention whos fault it was (Ha ha)  but we are just interns so we cant but it wasnt our fault.
 <br><br><br>
 
-3.2.3. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>
+- 3.2.3. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>
 <br><br>
 
-3.2.4. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
+- 3.2.4. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
 <br><br>
 
 ## 4. Target Audience
