@@ -89,15 +89,15 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 <br>
 
 >[!NOTE]
-> Debugging/Troubleshooting, If you didnt have an issue you can skip to part 8 
+> If you didnt have an issue you can skip to part 8 
 
-> For documentational purpose and potential debugging:
+> For documentational purpose and potential debugging/trouble shooting:
 Since we’re on an enterprise network, we have different isolated networks within the Network. After installation, we were given a network segment to lab on within our enterprise network.However, we had issues connecting to our default gateway, leading to troubleshooting seasion.
 We got help from some of the network technicians in our department who helped us solve this issue, 
 so thanks to <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson and <a href="https://github.com/kd00r">Patrik</a>
 
-To solve this, like in all areas when it comes to IT - breaking it down to smaller pieces (not actually), 
-pinpointing the error by the process of elimination and conventional walkthrough of the OSI layers.
+To solve this, We did like in all areas when it comes to IT - breaking it down to smaller pieces (not literally), to try and 
+localizing the error by the process of elimination and conventional walkthrough of the OSI layers.
 - We tried different syntax for the config file, 
 - We tried running without the virtual bridge.
 - We tried different cables. 
