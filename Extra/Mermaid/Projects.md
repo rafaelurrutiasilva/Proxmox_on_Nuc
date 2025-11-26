@@ -1,16 +1,5 @@
 ```mermaid
-%%{init: {
-    "theme": "base",
-    "themeVariables": {
-        "primaryTextColor": "#000000",
-        "secondaryTextColor": "#000000",
-        "tertiaryTextColor": "#000000",
-        "lineColor": "#000000",
-        "background": "#ffffff"
-    },
-    "themeCSS": ".mermaid svg { background-color: #ffffff !important; }"
-}}%%
-
+%%{init: { 'logLevel': 'debug', 'theme': 'base' } }%%
 timeline
     title Overview of Internship projects
     Nov : Introduction + Planning
@@ -19,8 +8,7 @@ timeline
     Jan : Deployment
          : IAM
     Feb : Monitoring : Metrics Visualization
-    Mar-Apr : Nätverk
-        : Automatisering
+    Mar-Apr : Networking
+        : Automization
     
 ```
-<!-- %%{init: { 'logLevel': 'debug', 'theme': 'base' } }%% -->
