@@ -11,7 +11,7 @@ First project in a series of projects during our internship at SMHI (The Swedish
 ## Table of Contents
 
 1. [Introduction](#1.introduction)
-2. [Goals and Objectives](#goals-and-objectives)
+2. [Goals and Objectives]([#goals-and-objectives](https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/README.md#2-goals-and-objectives))
 3. [Method](#method)
 4. [Target Audience](#target-audience)
 5. [Document Status](#document-status)
