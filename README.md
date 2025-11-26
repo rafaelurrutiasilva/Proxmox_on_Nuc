@@ -1,7 +1,7 @@
 # Installing Proxmox on an Asus PN64
 <img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc_smaller.png?raw=true" allign=left><br>
 <!-- **Installing Proxmox on an Asus PN64** -->
-<br>**Authors:** _Filip Andersson and Jonatan Högild_<br>
+<br>**Authors:** _<a href="https://github.com/Filipanderssondev">Filip Andersson</a> and <a href="https://github.com/JonatanHogild">Jonatan Högild</a>_<br>
 Publiceringsdatum<br>
 
 ## Abstract
@@ -27,7 +27,7 @@ First project in a series of projects during our internship at SMHI (The Swedish
 **Greetings!**
 _...and welcome to our project. This project is a the first project <a href="[in a series of projects](https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md)" > with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on SMHI's IT-department (The Swedish Meteorological and Hydrological Institute) headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
 
-**Filip Andersson and Jonatan Högild**
+**<a href="https://github.com/Filipanderssondev">Filip Andersson</a> and <a href="https://github.com/JonatanHogild">Jonatan Högild</a>**
 <!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
 <br>
 
