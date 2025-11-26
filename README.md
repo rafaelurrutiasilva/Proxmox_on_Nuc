@@ -94,7 +94,7 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 > Troubleshooting, for general documentation purpose:
 Since we’re on an enterprise network, we have different isolated networks within the Network. After installation, we were given a network segment to lab on within our enterprise network.However, we had issues connecting to our default gateway, leading to troubleshooting seasion.
 We got help from some of the network technicians in our department who helped us solve this issue, 
-so thanks to Robert Brokull, Marcus Jehrlander and Martin Lennartsson. 
+so thanks to <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson and <a href="https://github.com/kd00r">Patrik</a>
 
 To troubleshoot this, like in all areas of IT - breaking it down to smaller pieces (not actually), 
 pinpointing the error by the process of elimination and conventional walkthrough of the OSI layers.
