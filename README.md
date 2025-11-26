@@ -96,16 +96,16 @@ Since we’re on an enterprise network, we have different isolated networks with
 We got help from some of the network technicians in our department who helped us solve this issue, 
 so thanks to <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson and <a href="https://github.com/kd00r">Patrik</a>
 
-To solve this, We did like in all areas when it comes to IT - breaking it down to smaller pieces (not literally), to try and 
+- To solve this, We did like in all areas when it comes to IT - breaking it down to smaller pieces (not literally), to try and 
 localizing the error by the process of elimination and conventional walkthrough of the OSI layers.
-- We tried different syntax for the config file, 
-- We tried running without the virtual bridge.
-- We tried different cables. 
-- We thought it could have something to do with Switch port security.
-- We checked the ARP table on the server and noted that it was empty.
-- We did a packet capture on the interface and the switch and saw that ARP requests was being sent, but no replies were being sent.
-- We thought it could have something to do with our port channel not being configured to accept VLAN
-- Then at last, it turned out SVI (Switch Virtual Interface) wasnt properly configured, 
+   - We tried different syntax for the config file, 
+   - We tried running without the virtual bridge.
+   - We tried different cables. 
+   - We thought it could have something to do with Switch port security.
+   - We checked the ARP table on the server and noted that it was empty.
+   - We did a packet capture on the interface and the switch and saw that ARP requests was being sent, but no replies were being sent.
+   - We thought it could have something to do with our port channel not being configured to accept VLAN
+   - Then at last, it turned out SVI (Switch Virtual Interface) wasnt properly configured, 
 and we were told to mention whos fault it was (Ha ha)  but we are just interns so we cant but it wasnt our fault.
 <br><br><br>
 
