@@ -36,8 +36,6 @@ This is part of a larger ongoing IaC-project (Infrastructure as Code) that will 
 The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain. <br>
 <br><br>
 
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/28708805-0ec5-4087-9f17-df48ff1a83f5" />
-
 ## 3. Method
 
 ### 3.1. Installation
