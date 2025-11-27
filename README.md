@@ -9,17 +9,18 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
 <br>
 
 ## Table of Contents
-
-1. [Introduction](##1.introduction)
-2. [Goals and Objectives](##)
-3. [Method](##method)
-4. [Target Audience](##-4.-Target-Audience)
-5. [Document Status](##document-status)
-6. [Disclaimer](##disclaimer)
-7. [Scope and Limitations](##scope-and-limitations)
-9. [Environment](##environment)
-10. [Acknowledgments](##acknowledgments)
-11. [References](###references)
+1. [Introduction](#1-introduction)
+2. [Goals and Objectives](#2-goals-and-objectives)
+3. [Method](#3-method)<br>
+   3.1 [Installation](#31-installation)<br>
+   3.2 [Network Configuration](#32-network-configuration)<br>
+4. [Target Audience](#4-Target-Audience)
+5. [Document Status](#5-document-status)
+6. [Disclaimer](#6-disclaimer)
+7. [Scope and Limitations](#7-scope-and-limitations)
+8. [Environment](#8-environment)
+9. [Acknowledgments](#9-acknowledgments)
+10. [References](#10-references)
 <!-- 11. [Conclusion](##conclusion) -->
 <br>
 
@@ -33,42 +34,36 @@ _...and welcome to our project. This project is a the first project <a href="htt
 
 ## 2. Goals and Objectives
 This is part of a larger ongoing IaC-project (Infrastructure as Code) that will use Proxmox as a base. 
-The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain. <br>
-<br><br>
+The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain.
+<br>
 
 ## 3. Method
 
-### 3.1. Installation
-<br>
+### 3.1 Installation
+3.1.1 Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
 
-- 3.1.1. Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
+3.1.2 A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using powershell: <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>
 
-<br>
+3.1.3 Burn the .ISO file to a USB-stick using <a href=https://rufus.ie>rufus</a>.
 
-- 3.1.2. A SHA256 checksum is provided for each .ISO. This hash can be confirmed on Windows using the powershell command <pre>Get-FileHash .\proxmox-ve_9.0.1.iso -Algorithm SHA 256</pre>
-<br>
-
-- 3.1.3. Burn the .ISO file to a USB-stick using <a href=https://rufus.ie>rufus</a>.
-<br><br>
-
-- 3.1.4. Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:
+3.1.4 Plug in the USB to the Asus machine and enter the UEFI settings. Configure the following:
    - Secure Boot disabled
    - Intel VT-x enabled
+   - Intel VT-d enabled
    - Change boot order to begin with the USB-stick.
-<br>
 
-- 3.1.5. Save the changes and restart, then follow the installation instructions:
-   - Ext4 will be used for this project.
-   - 10 GB swap space was added.
-<br><br>
+3.1.5 Save the changes and restart, then follow the installation guide.
+The installation is fairly straight-forward, but there are some important things to consider.
 
-- 3.1.6. Once installed, the system will reboot into a CLI. Enter root as user and log in.
-<br><br><br>
+3.1.6 There are multiple file-system choices, each providing its own strengths and weaknesses.
+For this project, we chose to go with ext4, as it seem most approriate for our small lab environment. 
+We also chose to to add 10 GB swap space. 
 
-### 3.2. Network Configuration
-<br>
+3.1.7 Once installed, the system will reboot into a CLI. Enter root as user and log in. 
 
-- 3.2.1. Network configuration is found in **/etc/network/interfaces** and might look like this:
+
+### 3.2 Network Configuration
+- 3.2.1 Network configuration is found in **/etc/network/interfaces** and should look like this:
    <pre>
       auto lo
       iface lo inet loopback
@@ -83,35 +78,33 @@ The goal of this project is to build a complete IT-environment and gain a deeper
       bridge_stp off
       bridge_fd 0
    </pre>
-
 <br>
 
-> [!NOTE]
-> If you didnt have an issue you can skip to part 3.2.3.
+> After installation, we were given a network segment to lab on within our enterprise network. However, we had issues reaching our default gateway, leading to a troubleshooting session.
+> we examined various things on Debian for potential solutions. Doing a packet capture on the port, we could tell that ARP requests were being sent out, but no replies were recivied.
+> Not having access to the switches here, we got help from the network guys and after some more troubleshooting, we were able to determine that the SVI was not properly configured.
 
-- 3.2.2 We were unable to connect to our default gateway, leading to troubleshooting a seasion. For documentational purpose and potential troubleshooting aid:
-Since we’re on an enterprise network, we have different isolated networks within the Network. After installation, we were given a network segment to lab on within our enterprise network.However, .
-We got help from some of the network technicians in our department who helped us solve this issue, 
-so thanks to <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson and <a href="https://github.com/kd00r">Patrik</a>
+- 3.2.2 SSH<br>
+The Debian base (Trixie/13) comes with SSH preinstalled. Check SSH connectivity with:
+<pre>ssh user@ip</pre>
 
-- To solve this, We did like in all areas when it comes to IT - breaking it down to smaller pieces (not literally), to try and 
-localizing the error by the process of elimination and conventional walkthrough of the OSI layers.
-   - We tried different syntax for the config file, 
-   - We tried running without the virtual bridge.
-   - We tried different cables. 
-   - We thought it could have something to do with Switch port security.
-   - We checked the ARP table on the server and noted that it was empty.
-   - We did a packet capture on the interface and the switch and saw that ARP requests was being sent, but no replies were being sent.
-   - We thought it could have something to do with our port channel not being configured to accept VLAN
-   - Then at last, it turned out SVI (Switch Virtual Interface) wasnt properly configured, 
-and we were told to mention whos fault it was (Ha ha)  but we are just interns so we cant but it wasnt our fault.
-<br><br><br>
+- 3.2.3 Add Users<br>
+We added two new users for ourselves with:
+<pre>adduser jonatan
+adduser filip</pre>
 
+At some later point, we will also include ourselves in the sudo group. But right now sudo isn't installed on the system.
+
+- 3.2.4 Updating Debian and Proxmox<br>
+Our server does not have full access to the Internet. We request resources over the Internet, and create an errand to the network group. So before we can update the system, we request access to the domain-names in question.
+Debian stores URIs from which it recivies updates in /etc/apt/sources.list by default. Proxmox rearanges this slightly, and have 3 main repositories. 
+
+<!--
 - 3.2.3. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>
 <br><br>
 
 - 3.2.4. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
-<br><br>
+<br><br>-->
 
 ## 4. Target Audience
 This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
@@ -143,18 +136,17 @@ This repo is also part of a larger project aimed at people interested in learnin
 
 ## 8. Environment
 **8.1. Hardware**
-- Asus PN64 ax210NGW 16 GB (See reference)
-- USB flash drive 64 GB
-<br>
+- Asus PN64 ax210NGW 16 GB (See reference).
+- USB flash drive 64 GB.
 
 **8.2. Software**
-- Windows 10 was used for downloading Proxmox
+- Windows 10 was used for downloading Proxmox.
 - Rufus 3.2 was used for burning the Proxmox .ISO file onto the USB.
 - Proxmox uses a Debian base with a CLI.
 <br>
 
 ## 9. Acknowledgments
-We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance, And then the skilled network technichians <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson, <a href="https://github.com/kd00r">Patrik</a> and the ITI team at SMHI Norrköping. 
+We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance, and the network technichians <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson, <a href="https://github.com/kd00r">Patrik</a> and the ITI team at SMHI Norrköping. 
 <br><br>
 
 ## 10. References
