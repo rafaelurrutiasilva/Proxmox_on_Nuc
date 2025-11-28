@@ -131,11 +131,11 @@ This repo is also part of a larger project aimed at people interested in learnin
 <br>
 
 ## 7. Scope and Limitations
-- **7.1. Scope**
+- ### 7.1. Scope
    - * Step-by-step instructions for installing Proxmox VE.
    - * Basic post-installation configuration.
 
-- **7.2. Limitations**
+- ### 7.2. Limitations
    - * This guide is not intended for production-grade, multi-node clusters or advanced HA setups.
    - * Hardware compatibility varies; If unsure, check <a href=https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements>hardware requirements</a> before proceeding. 
    - * Network configuration is for now limited to a single-node setup and may not apply to complex environments.
@@ -143,11 +143,11 @@ This repo is also part of a larger project aimed at people interested in learnin
 <br>
 
 ## 8. Environment
-- **8.1. Hardware**
+- ### 8.1. Hardware
    - Asus PN64 ax210NGW 16 GB (See reference).
    - USB flash drive 64 GB.
 
-- **8.2. Software**
+- ### 8.2. Software
    - Windows 10 was used for downloading Proxmox.
    - Rufus 3.2 was used for burning the Proxmox .ISO file onto the USB.
    - Proxmox uses a Debian base with a CLI.
