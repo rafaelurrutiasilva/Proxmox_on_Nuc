@@ -38,7 +38,7 @@ _...and welcome to our project. This project is a the first project <a href="htt
 <br>
 
 ## 2. Goals and Objectives
-This is part of a larger ongoing IaC-project (Infrastructure as Code) that will use Proxmox as a base. 
+This is part of a larger ongoing Infrastructure as Code (IaC) that will use Proxmox as a base. 
 The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain.
 <br>
 <br>
