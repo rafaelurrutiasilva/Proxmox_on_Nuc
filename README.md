@@ -1,5 +1,36 @@
 # Installing Proxmox on an Asus PN64
 <img width="400" alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/Proxmox_on_nuc_smaller.png?raw=true" allign=left><br>
+
+<!-- hex color codes: #889ec3 och #184968 #006100'-->
+```mermaid
+---
+config:
+  theme: 'base'
+  themeVariables:
+    primaryColor: '#889ec3'
+    primaryTextColor: '#fff'
+    primaryBorderColor: '#7C0000'
+    lineColor: '#000000'
+    secondaryColor: '#184968`
+    tertiaryColor: '#fff'
+---
+flowchart TD
+
+subgraph infra[Infrastructure]
+    A[Laptop]
+    B[Laptop]
+    C{"Proxmox<br>Server"}
+
+    A -->|ssh| C
+    B -->|ssh| C 
+
+    C --> D[Application]
+    C --> E[Application]
+    C --> F[Application]
+end
+
+style infra fill:#e0f3ff,stroke:#3399ff,stroke-width:1px
+```
 <!-- **Installing Proxmox on an Asus PN64** -->
 <br>**Authors:** _<a href="https://github.com/Filipanderssondev">Filip Andersson</a> and <a href="https://github.com/JonatanHogild">Jonatan Högild</a>_<br>
 Publiceringsdatum<br>
