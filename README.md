@@ -132,14 +132,14 @@ This repo is also part of a larger project aimed at people interested in learnin
 
 ## 7. Scope and Limitations
 - ### 7.1. Scope
-   - * Step-by-step instructions for installing Proxmox VE.
-   - * Basic post-installation configuration.
+   * Step-by-step instructions for installing Proxmox VE.
+   * Basic post-installation configuration.
 
 - ### 7.2. Limitations
-   - * This guide is not intended for production-grade, multi-node clusters or advanced HA setups.
-   - * Hardware compatibility varies; If unsure, check <a href=https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements>hardware requirements</a> before proceeding. 
-   - * Network configuration is for now limited to a single-node setup and may not apply to complex environments.
-   - * Instructions may become outdated as software updates; always verify with the official documentation.
+   * This guide is not intended for production-grade, multi-node clusters or advanced HA setups.
+   * Hardware compatibility varies; If unsure, check <a href=https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements>hardware requirements</a> before proceeding. 
+   * Network configuration is for now limited to a single-node setup and may not apply to complex environments.
+   * Instructions may become outdated as software updates; always verify with the official documentation.
 <br>
 
 ## 8. Environment
