@@ -18,10 +18,14 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
 5. [Document Status](#5-document-status)
 6. [Disclaimer](#6-disclaimer)
 7. [Scope and Limitations](#7-scope-and-limitations)
+   7.1 [Scope](#71-Scope)
+   7.2 [Limitations](#72-Limitations)
 8. [Environment](#8-environment)
-9. [Acknowledgments](#9-acknowledgments)
-10. [References](#10-references)
-<!-- 11. [Conclusion](##conclusion) -->
+   8.1 [Hardware](#81-Hardware)
+   8.2 [Software](#82-Software)
+10. [Acknowledgments](#9-acknowledgments)
+11. [References](#10-references)
+12. [Conclusion](##conclusion)
 <br>
 
 ## 1. Introduction<br>
@@ -38,6 +42,7 @@ The goal of this project is to build a complete IT-environment and gain a deeper
 <br>
 
 ## 3. Method
+<br>
 
 ### 3.1 Installation
 3.1.1 Proxmox VE 9.1 was downloaded from the <a href=https://proxmox.com/en/downloads/proxmox-virtual-environment/iso>official site</a>.
@@ -93,7 +98,7 @@ We added two new users for ourselves with:
 <pre>adduser jonatan
 adduser filip</pre>
 
-At some later point, we will also include ourselves in the sudo group. But right now sudo isn't installed on the system.
+At some point later, we will also include ourselves in the sudo group. But right now sudo isn't installed on the system.
 
 - 3.2.4 Updating Debian and Proxmox<br>
 Our server does not have full access to the Internet. We request resources over the Internet, and create an errand to the network group. So before we can update the system, we request access to the domain-names in question.
@@ -156,7 +161,5 @@ We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urru
 - [Rufus software for burning the ISO image](https://rufus.ie/en/)
 <br>
 
-<!--
 ## 11. Conclusion
 Slutsats
--->
