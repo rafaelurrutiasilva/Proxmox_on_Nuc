@@ -17,15 +17,16 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
 4. [Target Audience](#4-Target-Audience)
 5. [Document Status](#5-document-status)
 6. [Disclaimer](#6-disclaimer)
-7. [Scope and Limitations](#7-scope-and-limitations)
-   7.1 [Scope](#71-Scope)
+7. [Scope and Limitations](#7-scope-and-limitations)<br>
+   7.1 [Scope](#71-Scope)<br>
    7.2 [Limitations](#72-Limitations)
-8. [Environment](#8-environment)
-   8.1 [Hardware](#81-Hardware)
-   8.2 [Software](#82-Software)
-10. [Acknowledgments](#9-acknowledgments)
-11. [References](#10-references)
-12. [Conclusion](##conclusion)
+8. [Environment](#8-environment)<br>
+   8.1 [Hardware](#81-hardware)<br>
+   8.2 [Software](#82-software)
+9. [Acknowledgments](#9-acknowledgments)
+10. [References](#10-references)
+11. [Conclusion](##conclusion)
+
 <br>
 
 ## 1. Introduction<br>
