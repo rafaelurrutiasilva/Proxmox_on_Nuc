@@ -14,7 +14,7 @@ config:
     secondaryColor: '#184968`
     tertiaryColor: '#fff'
 ---
-flowchart TD
+flowchart BT
 
 subgraph infra[Infrastructure]
     A[Laptop]
