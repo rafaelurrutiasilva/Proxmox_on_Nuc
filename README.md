@@ -68,7 +68,6 @@ We also chose to to add 10 GB swap space.
 
 - 3.1.7 Once installed, the system will reboot into a CLI. Enter root as user and log in. 
 <br>
-<br>
 
 ### 3.2 Post-Install Configuration
 - 3.2.1 Network configuration is found in **/etc/network/interfaces** and should look like this:
@@ -129,8 +128,6 @@ Install sudo with: <pre>apt install sudo</pre>
 Then add users to the sudo group: 
 <pre>usermod -aG sudo jonatan
 usermod -aG sudo filip</pre>
-
-- 3.2.8 
 
 ## 4. Target Audience
 - This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
