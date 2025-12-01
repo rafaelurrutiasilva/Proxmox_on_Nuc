@@ -26,7 +26,7 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
    8.2 [Software](#82-software)
 9. [Acknowledgments](#9-acknowledgments)
 10. [References](#10-references)
-11. [Conclusion](##conclusion)
+11. [Conclusion](#11-conclusion)
 
 <br>
 
@@ -119,7 +119,14 @@ Add a new repository, select No-Subscription
 Disable the pve-enterprise and ceph-squid repositories.
 
 - 3.2.6 Update the system<br>
-Go into Updates, refresh and upgrade. Reboot the system if prompted. 
+Go into Updates, refresh and upgrade. Reboot the system if prompted.
+
+- 3.2.7 Update Linux Users
+Install sudo with: <pre>apt install sudo</pre>
+
+Then add users to the sudo group: 
+<pre>usermod -aG sudo jonatan
+usermod -aG sudo filip</pre>
 
 ## 4. Target Audience
 - This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
