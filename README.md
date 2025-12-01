@@ -3,7 +3,7 @@
 
 <!-- **Installing Proxmox on an Asus PN64** -->
 <br>**Authors:** _<a href="https://github.com/Filipanderssondev">Filip Andersson</a> and <a href="https://github.com/JonatanHogild">Jonatan Högild</a>_<br>
-1/12 2025<br>
+01-12-2025<br>
 
 ## Abstract
 First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> during our internship at **The Swedish Meteorological and Hydrological Institute** [(SMHI)](https://www.smhi.se/en/about-smhi), Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
