@@ -14,7 +14,7 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
 2. [Goals and Objectives](#2-goals-and-objectives)
 3. [Method](#3-method)<br>
    3.1 [Installation](#31-installation)<br>
-   3.2 [Network Configuration](#32-network-configuration)<br>
+   3.2 [Post-Install Configuration](#32-post-install-configuration)<br>
 4. [Target Audience](#4-Target-Audience)
 5. [Document Status](#5-document-status)
 6. [Disclaimer](#6-disclaimer)
@@ -70,7 +70,7 @@ We also chose to to add 10 GB swap space.
 <br>
 <br>
 
-### 3.2 Network Configuration
+### 3.2 Post-Install Configuration
 - 3.2.1 Network configuration is found in **/etc/network/interfaces** and should look like this:
    <pre>
       auto lo
@@ -103,17 +103,23 @@ adduser filip</pre>
 
 At some point later, we will also include ourselves in the sudo group. But right now sudo isn't installed on the system.
 
-- 3.2.4 Updating Debian and Proxmox<br>
-Our server does not have full access to the Internet. We request resources over the Internet, and create an errand to the network group. So before we can update the system, we request access to the domain-names in question.
-Debian stores URIs from which it recivies updates in /etc/apt/sources.list by default. Proxmox rearanges this slightly, and have 3 main repositories. 
+- 3.2.4 Connect to the web GUI<br>
+Our server does not have full access to the Internet or other resources on the LAN. We request resources by sending errands to the network-group. To access the Proxmox web GUI, we request access to the server using port 8006.
 
-<!--
-- 3.2.3. Test Internet connectivity with: <pre>ping 8.8.8.8</pre>
-<br><br>
+Connect to the web GUI in a browser using the server's ip address: <pre>https\://xxx.xxx.xxx.xxx:8006/</pre>
 
-- 3.2.4. Log into the web GUI in a browser using your own ip address: <pre>https://xxx.xxx.xxx.xxx:8006/</pre>
->-->
-<br>
+You will be prompted to log in with a username and password. There are two different methods of logging in, either with the root linux user created upon install, or as a proxmox user. For the first log-in, there is no proxmox user present yet, so log in with root user. 
+
+- 3.2.5 Change Proxmox Repositories<br>
+Proxmox uses two different repositories for updates, an enterprise repo and a no-subscription repo. This project will use the no-subscription repo.
+
+Go to Updates > Repositories
+Add a new repository, select No-Subscription
+
+Disable the pve-enterprise and ceph-squid repositories.
+
+- 3.2.6 Update the system<br>
+Go into Updates, refresh and upgrade. Reboot the system if prompted. 
 
 ## 4. Target Audience
 - This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
