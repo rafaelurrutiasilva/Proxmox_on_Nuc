@@ -108,7 +108,9 @@ Our server does not have full access to the Internet or other resources on the L
 
 Connect to the web GUI in a browser using the server's ip address: <pre>https\://xxx.xxx.xxx.xxx:8006/</pre>
 
-You will be prompted to log in with a username and password. There are two different methods of logging in, either with the root linux user created upon install, or as a proxmox user. For the first log-in, there is no proxmox user present yet, so log in with root user. 
+If a warning about http not being secure shows up, ignore it and proceed. 
+
+You will be prompted to log in with a username and password. There are two different methods of logging in, either with the root linux user (Linux PAM), or with the Proxmox VE authentication server. log in with root user created upon install. 
 
 - 3.2.5 Change Proxmox Repositories<br>
 Proxmox uses two different repositories for updates, an enterprise repo and a no-subscription repo. This project will use the no-subscription repo.
@@ -127,6 +129,8 @@ Install sudo with: <pre>apt install sudo</pre>
 Then add users to the sudo group: 
 <pre>usermod -aG sudo jonatan
 usermod -aG sudo filip</pre>
+
+- 3.2.8 
 
 ## 4. Target Audience
 - This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
@@ -179,4 +183,4 @@ This repo is also part of a larger project aimed at people interested in learnin
 <br>
 
 ## 11. Conclusion
-- The aim of this project was building a solid foundation for our IT-enviroment, and we feel confident to say that we accomplished that. This was a fun and challenging project, both technical and challenging in other aspects, like agile communication due to diffrent backgrounds and experiences but we always managed to succeed in the in those aspects aswell. 
+- The aim of this project was building a solid foundation for our IT-enviroment, and we feel confident to say that we accomplished that. This was a fun and challenging project, both technical and challenging in other aspects, like agile communication due to diffrent backgrounds and experiences but we always managed to succeed in those aspects aswell. 
