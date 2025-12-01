@@ -166,4 +166,4 @@ This repo is also part of a larger project aimed at people interested in learnin
 <br>
 
 ## 11. Conclusion
-The aim of this project was building a solid foundation for our IT-enviroment, and we feel confident to say that we accomplished that. This was a fun and challenging project, both technical and challenging in other aspects, like agile communication due to diffrent backgrounds and experiences but we always managed to succed in the in those aspects aswell. 
+- The aim of this project was building a solid foundation for our IT-enviroment, and we feel confident to say that we accomplished that. This was a fun and challenging project, both technical and challenging in other aspects, like agile communication due to diffrent backgrounds and experiences but we always managed to succeed in the in those aspects aswell. 
