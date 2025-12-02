@@ -123,12 +123,15 @@ Disable the pve-enterprise and ceph-squid repositories.
 - 3.2.6 Update the system<br>
 Go into Updates, refresh and upgrade. Reboot the system if prompted.
 
-- 3.2.7 Update Linux Users
+- 3.2.7 Add Sudo
 Install sudo with: <pre>apt install sudo</pre>
 
 Then add users to the sudo group: 
 <pre>usermod -aG sudo jonatan
 usermod -aG sudo filip</pre>
+
+- 3.2.8 Add NTP server<br>
+Proxmox uses a predefined pool of NTP servers to synchronize time. If this works for you, skip this step. We'll be using a local NTP server instead. Open /etc/chrony/chrony.conf, comment out the line "pool 2.debian.pool.ntp.org iburst" and add "server <ip-address/domain.name> iburst". Save and exit, then restart chrony with: <pre>systemctl restart chronyd</pre>
 
 ## 4. Target Audience
 - This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
