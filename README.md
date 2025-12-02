@@ -3,7 +3,8 @@
 
 <!-- **Installing Proxmox on an Asus PN64** -->
 <br>**Authors:** _<a href="https://github.com/Filipanderssondev">Filip Andersson</a> and <a href="https://github.com/JonatanHogild">Jonatan Högild</a>_<br>
-Publiceringsdatum<br>
+
+01-12-2025<br>
 
 ## Abstract
 First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> during our internship at **The Swedish Meteorological and Hydrological Institute** [(SMHI)](https://www.smhi.se/en/about-smhi), Installation of Proxmox on an Asus PN64 ax210NGW (NUC/Mini-PC). <br>
@@ -26,7 +27,7 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
    8.2 [Software](#82-software)
 9. [Acknowledgments](#9-acknowledgments)
 10. [References](#10-references)
-11. [Conclusion](##conclusion)
+11. [Conclusion](#11-conclusion)
 
 <br>
 
@@ -68,7 +69,6 @@ We also chose to to add 10 GB swap space.
 
 - 3.1.7 Once installed, the system will reboot into a CLI. Enter root as user and log in. 
 <br>
-<br>
 
 ### 3.2 Post-Install Configuration
 - 3.2.1 Network configuration is found in **/etc/network/interfaces** and should look like this:
@@ -108,7 +108,9 @@ Our server does not have full access to the Internet or other resources on the L
 
 Connect to the web GUI in a browser using the server's ip address: <pre>https\://xxx.xxx.xxx.xxx:8006/</pre>
 
-You will be prompted to log in with a username and password. There are two different methods of logging in, either with the root linux user created upon install, or as a proxmox user. For the first log-in, there is no proxmox user present yet, so log in with root user. 
+If a warning about http not being secure shows up, ignore it and proceed. 
+
+You will be prompted to log in with a username and password. There are two different methods of logging in, either with the root linux user (Linux PAM), or with the Proxmox VE authentication server. log in with root user created upon install. 
 
 - 3.2.5 Change Proxmox Repositories<br>
 Proxmox uses two different repositories for updates, an enterprise repo and a no-subscription repo. This project will use the no-subscription repo.
@@ -119,7 +121,17 @@ Add a new repository, select No-Subscription
 Disable the pve-enterprise and ceph-squid repositories.
 
 - 3.2.6 Update the system<br>
-Go into Updates, refresh and upgrade. Reboot the system if prompted. 
+Go into Updates, refresh and upgrade. Reboot the system if prompted.
+
+- 3.2.7 Add Sudo
+Install sudo with: <pre>apt install sudo</pre>
+
+Then add users to the sudo group: 
+<pre>usermod -aG sudo jonatan
+usermod -aG sudo filip</pre>
+
+- 3.2.8 Add NTP server<br>
+Proxmox uses a predefined pool of NTP servers to synchronize time. If this works for you, skip this step. We'll be using a local NTP server instead. Open /etc/chrony/chrony.conf, comment out the line "pool 2.debian.pool.ntp.org iburst" and add "server <ip-address/domain.name> iburst". Save and exit, then restart chrony with: <pre>systemctl restart chronyd</pre>
 
 ## 4. Target Audience
 - This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
@@ -172,4 +184,4 @@ This repo is also part of a larger project aimed at people interested in learnin
 <br>
 
 ## 11. Conclusion
-- The aim of this project was building a solid foundation for our IT-enviroment, and we feel confident to say that we accomplished that. This was a fun and challenging project, both technical and challenging in other aspects, like agile communication due to diffrent backgrounds and experiences but we always managed to succeed in the in those aspects aswell. 
+- The aim of this project was building a solid foundation for our IT-enviroment, and we feel confident to say that we accomplished that. This was a fun and challenging project, both technical and challenging in other aspects, like agile communication due to diffrent backgrounds and experiences but we always managed to succeed in those aspects aswell. 
