@@ -96,12 +96,12 @@ We also chose to to add 10 GB swap space.
 The Debian base (Trixie/13) comes with SSH preinstalled. Check SSH connectivity with:
 <pre>ssh user@ip</pre>
 
+When connecting for the first time, SSH will warn you that the authenticity of host can't be established. This is normal, type 'yes' to continue.
+
 - 3.2.3 Add Users<br>
 We added two new users for ourselves with:
 <pre>adduser jonatan
 adduser filip</pre>
-
-At some point later, we will also include ourselves in the sudo group. But right now sudo isn't installed on the system.
 
 - 3.2.4 Connect to the web GUI<br>
 Our server does not have full access to the Internet or other resources on the LAN. We request resources by sending errands to the network-group. To access the Proxmox web GUI, we request access to the server using port 8006.
@@ -124,7 +124,7 @@ Disable the pve-enterprise and ceph-squid repositories.
 Go into Updates, refresh and upgrade. Reboot the system if prompted.
 
 - 3.2.7 Add Sudo
-Install sudo with: <pre>apt install sudo</pre>
+In the Debian shell, install sudo with: <pre>apt install sudo</pre>
 
 Then add users to the sudo group: 
 <pre>usermod -aG sudo jonatan
