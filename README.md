@@ -133,6 +133,17 @@ usermod -aG sudo filip</pre>
 - 3.2.8 Add NTP server<br>
 Proxmox uses a predefined pool of NTP servers to synchronize time. If this works for you, skip this step. We'll be using a local NTP server instead. Open /etc/chrony/chrony.conf, comment out the line "pool 2.debian.pool.ntp.org iburst" and add "server <ip-address/domain.name> iburst". Save and exit, then restart chrony with: <pre>systemctl restart chronyd</pre>
 
+- 3.2.9 Obtain a certificate<br>
+Proxmox automatically generates a self-signed certificate, but we will instead use a certificate from our own organisation. A CSR (Certificate Signing Request) can be created with this command: <pre>openssl req -out CSR.csr -new -newkey rsa:2048 -nodes -keyout privateKey.key</pre>
+
+This command lets you fill in various fields which will be used to generate CSR.csr and privateKey.key. 
+
+The CSR is sent, validated and enrolled, and we receive the .crt file with mail. We also download the Root CA and the issuing enterprise CA and string them together in the following order: Server > Issuing Enterprise > Root:
+<pre>cat server.crt issuingenterprise.crt root.crt > chain.txt</pre>
+
+In the Proxmox web-gui, Go to > Certificates > Upload Custom Certificate<br>
+Add the private key file and the certificate chain file, upload and reload the web interface. 
+
 ## 4. Target Audience
 - This repo is for anyone who wants a step-by-step guide on installing Proxmox VE.
 This repo is also part of a larger project aimed at people interested in learning about IaC, and building such an environment from scratch. 
