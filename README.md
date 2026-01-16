@@ -16,12 +16,12 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
 3. [Method](#3-method)<br>
    3.1 [Installation](#31-installation)<br>
    3.2 [Post-Install Configuration](#32-post-install-configuration)<br>
-4. [Target Audience](#4-Target-Audience)
+4. [Target Audience](#4-target-audience)
 5. [Document Status](#5-document-status)
 6. [Disclaimer](#6-disclaimer)
 7. [Scope and Limitations](#7-scope-and-limitations)<br>
-   7.1 [Scope](#71-Scope)<br>
-   7.2 [Limitations](#72-Limitations)
+   7.1 [Scope](#71-scope)<br>
+   7.2 [Limitations](#72-limitations)
 8. [Environment](#8-environment)<br>
    8.1 [Hardware](#81-hardware)<br>
    8.2 [Software](#82-software)
@@ -29,21 +29,16 @@ First project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob
 10. [References](#10-references)
 11. [Conclusion](#11-conclusion)
 
-<br>
 
 ## 1. Introduction<br>
 **Greetings!**
 _...and welcome to our project. This project is a the first project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on [The Swedish Meteorological and Hydrological Institute (SMHI)](https://www.smhi.se/en/about-smhi) IT-department at the headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! we will link every project to each other aswell._<br>
 
 **<a href="https://github.com/Filipanderssondev">Filip Andersson</a> and <a href="https://github.com/JonatanHogild">Jonatan Högild</a>**
-<!-- Inledning - Bakgrund och syfte. Eventuell översiktbild här -->
-<br>
 
 ## 2. Goals and Objectives
 This is part of a larger ongoing Infrastructure as Code (IaC) that will use Proxmox as a base. 
 The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain.
-<br>
-<br>
 
 ## 3. Method
 
@@ -71,22 +66,21 @@ We also chose to to add 10 GB swap space.
 <br>
 
 ### 3.2 Post-Install Configuration
-- 3.2.1 Network configuration is found in **/etc/network/interfaces** and should look like this:
-   <pre>
-      auto lo
-      iface lo inet loopback
+- 3.2.1 Network configuration is found in */etc/network/interfaces* and should look like this:
+<pre>
+   auto lo
+   iface lo inet loopback
 
-      iface enp2s0 inet manual
+   iface enp2s0 inet manual
 
-      auto vmbr0
-      iface vmbr0 inet static
-      address xxx.xxx.xxx.xxx/xx
-      gateway xxx.xxx.xxx.xxx
-      bridge_ports enp2s0
-      bridge_stp off
-      bridge_fd 0
-   </pre>
-<br>
+   auto vmbr0
+   iface vmbr0 inet static
+   address xxx.xxx.xxx.xxx/xx
+   gateway xxx.xxx.xxx.xxx
+   bridge_ports enp2s0
+   bridge_stp off
+   bridge_fd 0
+</pre>
 
 > After installation, we were given a network segment to lab on within our enterprise network. However, we had issues reaching our default gateway, leading to a debugging session trying to locate the error by the method of elimination in the OSI layers.
 > we examined various things on Debian for potential solutions. Doing a packet capture on the port, we could tell that ARP requests were being sent out, but no replies were recivied.
@@ -94,14 +88,18 @@ We also chose to to add 10 GB swap space.
 
 - 3.2.2 SSH<br>
 The Debian base (Trixie/13) comes with SSH preinstalled. Check SSH connectivity with:
-<pre>ssh user@ip</pre>
+```
+ssh username@ip-address
+```
 
-When connecting for the first time, SSH will warn you that the authenticity of host can't be established. This is normal, type 'yes' to continue.
+When connecting for the first time, SSH will warn you that the authenticity of host can't be established. This is normal, type *yes* to continue.
 
 - 3.2.3 Add Users<br>
 We added two new users for ourselves with:
-<pre>adduser jonatan
-adduser filip</pre>
+```bash
+adduser jonatan
+adduser filip
+```
 
 - 3.2.4 Connect to the web GUI<br>
 Our server does not have full access to the Internet or other resources on the LAN. We request resources by sending errands to the network-group. To access the Proxmox web GUI, we request access to the server using port 8006.
@@ -116,30 +114,43 @@ You will be prompted to log in with a username and password. There are two diffe
 Proxmox uses two different repositories for updates, an enterprise repo and a no-subscription repo. This project will use the no-subscription repo.
 
 Go to Updates > Repositories
-Add a new repository, select No-Subscription
+Add a new repository, select *No-Subscription*
 
-Disable the pve-enterprise and ceph-squid repositories.
+Disable the *pve-enterprise* and *ceph-squid* repositories.
 
 - 3.2.6 Update the system<br>
 Go into Updates, refresh and upgrade. Reboot the system if prompted.
 
 - 3.2.7 Add Sudo
-In the Debian shell, install sudo with: <pre>apt install sudo</pre>
+In the Debian shell, install sudo with:
+```
+apt install sudo
+```
 
 Then add users to the sudo group: 
-<pre>usermod -aG sudo jonatan
-usermod -aG sudo filip</pre>
+```bash
+usermod -aG sudo jonatan
+usermod -aG sudo filip
+```
 
 - 3.2.8 Add NTP server<br>
-Proxmox uses a predefined pool of NTP servers to synchronize time. If this works for you, skip this step. We'll be using a local NTP server instead. Open /etc/chrony/chrony.conf, comment out the line "pool 2.debian.pool.ntp.org iburst" and add "server <ip-address/domain.name> iburst". Save and exit, then restart chrony with: <pre>systemctl restart chronyd</pre>
+Proxmox uses a predefined pool of NTP servers to synchronize time. If this works for you, skip this step. We'll be using a local NTP server instead. Open /etc/chrony/chrony.conf, comment out the line *pool 2.debian.pool.ntp.org iburst* and add *server <ip-address/domain.name> iburst*. Save and exit, then restart chrony with:
+```
+systemctl restart chronyd
+```
 
 - 3.2.9 Obtain a certificate<br>
-Proxmox automatically generates a self-signed certificate, but we will instead use a certificate from our own organisation. A CSR (Certificate Signing Request) can be created with this command: <pre>openssl req -out CSR.csr -new -newkey rsa:2048 -nodes -keyout privateKey.key</pre>
+Proxmox automatically generates a self-signed certificate, but we will instead use a certificate from our own organisation. A CSR (Certificate Signing Request) can be created with this command:
+```
+openssl req -out CSR.csr -new -newkey rsa:2048 -nodes -keyout privateKey.key
+```
 
 This command lets you fill in various fields which will be used to generate CSR.csr and privateKey.key. 
 
-The CSR is sent, validated and enrolled, and we receive the .crt file with mail. We also download the Root CA and the issuing enterprise CA and string them together in the following order: Server > Issuing Enterprise > Root:
-<pre>cat server.crt issuingenterprise.crt root.crt > chain.txt</pre>
+The CSR is created, then sent, validated and enrolled. We receive the .crt file with mail. We also download the Root CA and the issuing enterprise CA and string them together in the following order: Server > Issuing Enterprise > Root:
+```
+cat server.crt issuingenterprise.crt root.crt > chain.txt
+```
 
 In the Proxmox web-gui, Go to > Certificates > Upload Custom Certificate<br>
 Add the private key file and the certificate chain file, upload and reload the web interface. 
