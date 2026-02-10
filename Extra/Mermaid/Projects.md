@@ -3,12 +3,11 @@
 timeline
     title Overview of Internship projects
     Nov : Introduction + Planning
-        : Proxmox and Linux base
-    Dec : Virtualization : Infrastructure as code (Ansible)
-    Jan : Deployment
-         : IAM
-    Feb : Monitoring : Metrics Visualization
-    Mar-Apr : Networking
-        : Automization
-    
+        : Proxmox VE
+    Dec : Rocky Linux golden image : Ansible
+    Jan : Container deployment
+         : FreeIPA
+    Feb : Monitoring : Metrics visualization
+    Mar-Apr : TBA
+
 ```
