@@ -1,7 +1,7 @@
 # Installing Proxmox on an Asus PN64
 <img alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/proxmox-on-nuc.png" allign=left><br>
 
-**Installing Proxmox on an Asus PN64**
+**Installing Proxmox on an Asus PN64** <br>
 **Authors:** _<a href="https://github.com/Filipanderssondev">Filip Andersson</a> and <a href="https://github.com/JonatanHogild">Jonatan Högild</a>_
 01-12-2025
 
