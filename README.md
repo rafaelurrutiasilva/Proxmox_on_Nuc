@@ -28,11 +28,12 @@ Installing a Proxmox virtual enviroment on an ASUS Nuc PN64
    10.6 [NTP server](#106-ntp-server)<br>
    10.7 [Obtain an SSL certificate](#107-obtain-an-ssl-certificate)<br>
 11. [Conclusion](#11-conclusion)
-12. [References](#12-references)
+12. [References](#12-references) <br>
+    12.1 [Other projects in our virtual IT-enviroment](#other-projects-in-our-virtual-it-enviroment)
 
 ## Introduction<br>
-**Welcome!**
-This project is about installing a Proxmox virtual enviroment on an Asus Nuc PN64, followed by configuration of network, SSH, adding users and certification. This project is the first project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on [The Swedish Meteorological and Hydrological Institute (SMHI)](https://www.smhi.se/en/about-smhi) IT-department at the headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along!<br>
+**Welcome!** <br>
+_This project is about installing a Proxmox virtual enviroment on an Asus Nuc PN64, followed by configuration of network, SSH, adding users and certification. This project is the first project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on [The Swedish Meteorological and Hydrological Institute (SMHI)](https://www.smhi.se/en/about-smhi) IT-department at the headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along!_ <br>
 
 _[Other projects in our virtual IT-enviroment](#other-projects-in-our-virtual-it-enviroment)_
 
@@ -261,7 +262,8 @@ The aim of this project was building a solid foundation for our virtual IT-envir
 - [Rufus software for burning the ISO image](https://rufus.ie/en/)
 
 ### Other projects in our virtual IT-enviroment:
-- Part 2 - [Rocky Linux golden image for cloning](https://github.com/Filipanderssondev/Rocky_Linux_OS_Base_for_VMs)<br>
-- Part 3 - [Ansible on management VM](https://github.com/JonatanHogild/Ansible_on_management_vm)
-- Part 4 - [Container stack deployment and monitoring with ansible](https://github.com/Filipanderssondev/Container_Stack_Deployment_With_Ansible)
-- Part 5 - [FreeIPA for Virtual Enviroment](https://github.com/JonatanHogild/FreeIPA_for_virtual_environment/)
+<!-- - Project 1 - [Proxmox on Nuc](https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/) -->
+- Project 2 - [Rocky Linux golden image for cloning](https://github.com/Filipanderssondev/Rocky_Linux_OS_Base_for_VMs)<br>
+- Project 3 - [Ansible on management VM](https://github.com/JonatanHogild/Ansible_on_management_vm)
+- Project 4 - [Container stack deployment and monitoring with ansible](https://github.com/Filipanderssondev/Container_Stack_Deployment_With_Ansible)
+- Project 5 - [FreeIPA for Virtual Enviroment](https://github.com/JonatanHogild/FreeIPA_for_virtual_environment/)
