@@ -126,7 +126,7 @@ At this point, we can detach peripherals from the server and leave it headless.
 
 Connect to the web GUI in a browser using the server's ip address and the Proxmox-specific port (8006): 
 ```
-https\://xxx.xxx.xxx.xxx:8006/
+https://xxx.xxx.xxx.xxx:8006/
 ```
 
 If a warning about http not being secure shows up, ignore it and proceed. 
@@ -214,7 +214,7 @@ cat server.crt issuingenterprise.crt root.crt > chain.txt
 
 In the Proxmox web-gui, Go to > Certificates > Upload Custom Certificate
 
-Add the private key file and the certificate chain file, upload and reload the web interface.
+Add the private key file and the certificate chain file, upload and reload the web interface. If succesful, you may also log into the web ui with any of the provided subject alternative names (SALs).
 
 ## 4. Target Audience
 This repo is for anyone who wants a step-by-step guide on installing Proxmox VE and preparing it for hosting a virtual environment. 
@@ -222,7 +222,7 @@ This repo is also part of a larger project aimed at people interested in learnin
 
 
 ## 5. Document Status
-This repo is done.
+This repo is completed.
 This repo is part of a larger ongoing project.
 
 ## 6. Disclaimer
