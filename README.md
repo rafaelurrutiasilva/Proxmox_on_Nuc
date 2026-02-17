@@ -262,7 +262,6 @@ The aim of this project was building a solid foundation for our virtual IT-envir
 - [Rufus software for burning the ISO image](https://rufus.ie/en/)
 
 ### Other projects in our virtual IT-enviroment:
-<!-- - Project 1 - [Proxmox on Nuc](https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/) -->
 - Project 2 - [Rocky Linux golden image for cloning](https://github.com/Filipanderssondev/Rocky_Linux_OS_Base_for_VMs)<br>
 - Project 3 - [Ansible on management VM](https://github.com/JonatanHogild/Ansible_on_management_vm)
 - Project 4 - [Container stack deployment and monitoring with ansible](https://github.com/Filipanderssondev/Container_Stack_Deployment_With_Ansible)
