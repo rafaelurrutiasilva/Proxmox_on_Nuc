@@ -253,7 +253,7 @@ We also download the Root CA and the issuing enterprise CA and string them toget
 ```
 cat server.crt issuingenterprise.crt root.crt > chain.txt
 ```
-#### 10.7.3 Upload certifictae
+#### 10.7.3 Upload certificate
 
 In the Proxmox web-gui, Go to > Certificates > Upload Custom Certificate
 
