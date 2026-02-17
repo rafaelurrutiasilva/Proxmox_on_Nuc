@@ -253,7 +253,7 @@ This repo is part of a larger ongoing project.
 <br>
 
 ## 9. Acknowledgments
-- We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance, the skilled network technichians <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson, <a href="https://github.com/kd00r">Patrik</a> and the ITi team at SMHI Norrköping. 
+We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance, the skilled network technichians <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson, <a href="https://github.com/kd00r">Patrik</a> and the ITi team at SMHI Norrköping. 
 <br><br>
 
 ## 10. References
@@ -264,4 +264,4 @@ This repo is part of a larger ongoing project.
 <br>
 
 ## 11. Conclusion
-- The aim of this project was building a solid foundation for our IT-enviroment, and we feel confident to say that we accomplished that. This was a fun and challenging project, both technical and challenging in other aspects, like agile communication due to different backgrounds and experiences but we always managed to succeed in those aspects as well. 
+The aim of this project was building a solid foundation for our IT-enviroment, and we feel confident to say that we accomplished that. This was a fun and challenging project, both technical and challenging in other aspects, like agile communication due to different backgrounds and experiences but we always managed to succeed in those aspects as well. 
