@@ -33,7 +33,7 @@ Installing a Proxmox virtual enviroment on an ASUS Nuc PN64
 
 ## Introduction<br>
 **Welcome!** <br>
-_This project is about installing a Proxmox virtual enviroment on an Asus Nuc PN64, followed by configuration of network, SSH, adding users and certification. This project is the first project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on [The Swedish Meteorological and Hydrological Institute (SMHI)](https://www.smhi.se/en/about-smhi) IT-department at the headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along!_ <br>
+This project is about installing a Proxmox virtual enviroment on an Asus Nuc PN64, followed by configuration of network, SSH, adding users and certification. This project is the first project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on [The Swedish Meteorological and Hydrological Institute (SMHI)](https://www.smhi.se/en/about-smhi) IT-department at the headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! <br>
 
 _[Other projects in our virtual IT-enviroment](#other-projects-in-our-virtual-it-enviroment)_
 
