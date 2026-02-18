@@ -10,39 +10,39 @@ Installing a Proxmox virtual enviroment on an ASUS Nuc PN64
 <br>
 
 ## Table of Contents
-1. [Introduction](#1-introduction)
-2. [Goals and Objectives](#2-goals-and-objectives)
-3. [Method](#3-method)
-4. [Target Audience](#4-target-audience)
-5. [Document Status](#5-document-status)
-6. [Disclaimer](#6-disclaimer)
-7. [Scope and Limitations](#7-scope-and-limitations)
-8. [Environment](#8-environment)
-9. [Acknowledgments](#9-acknowledgments)
-10. [Implementation](#10-implementation)<br>
-   10.1 [Installation](#101-installation)<br>
-   10.2 [Network Configuration](#102-network-configuration)<br>
-   10.3 [SSH](#103-ssh)<br>
-   10.4 [Proxmox web GUI](#104-proxmox-web-gui)<br>
-   10.5 [Add users](#105-add-users)<br>
-   10.6 [NTP server](#106-ntp-server)<br>
-   10.7 [Obtain an SSL certificate](#107-obtain-an-ssl-certificate)<br>
-11. [Conclusion](#11-conclusion)
-12. [References](#12-references) <br>
+1. [Introduction](#introduction)
+2. [Goals and Objectives](#goals-and-objectives)
+3. [Method](#method)
+4. [Target Audience](#target-audience)
+5. [Document Status](#document-status)
+6. [Disclaimer](#disclaimer)
+7. [Scope and Limitations](#scope-and-limitations)
+8. [Environment](#environment)
+9. [Acknowledgments](#acknowledgments)
+10. [Implementation](#implementation)<br>
+   10.1 [Installation](#installation)<br>
+   10.2 [Network Configuration](#network-configuration)<br>
+   10.3 [SSH](#ssh)<br>
+   10.4 [Proxmox web GUI](#proxmox-web-gui)<br>
+   10.5 [Add users](#add-users)<br>
+   10.6 [NTP server](#ntp-server)<br>
+   10.7 [Obtain an SSL certificate](#obtain-an-ssl-certificate)<br>
+11. [Conclusion](#conclusion)
+12. [References](#references) <br>
     12.1 [Other projects in our virtual IT-enviroment](#other-projects-in-our-virtual-it-enviroment)
 
 ## Introduction<br>
 **Welcome!** <br>
-This project is about installing a Proxmox virtual enviroment on an Asus Nuc PN64, followed by configuration of network, SSH, adding users and certification. This project is the first project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship on [The Swedish Meteorological and Hydrological Institute (SMHI)](https://www.smhi.se/en/about-smhi) IT-department at the headquarters in Norrköping. The second goal of these projects are also supposed to serve as a set-up guide here on Github for anyone and everyone that wants to follow along! <br>
+This project is about installing and configuring Proxmox VE on an Asus Nuc PN64. This project is the first project <a href="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Extra/Mermaid/Projects.md">in a series of projects</a> with the end goal of setting up a complete virtualized, automated, and monitored IT-Enviroment as a part of our internship at [The Swedish Meteorological and Hydrological Institute (SMHI)](https://www.smhi.se/en/about-smhi) IT-infrastructure and production department. These projects also serve as a set-up guide here on Github for anyone that wants to follow along! <br>
 
 _[Other projects in our virtual IT-enviroment](#other-projects-in-our-virtual-it-enviroment)_
 
 ## Goals and Objectives
-This is part of a larger ongoing IT-infrastructure project that will use Proxmox as a base.
+This is part of a larger ongoing IT-infrastructure project that will use Proxmox as a base. 
 The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain.
 
 ## Method
-The Proxmox VE image will be burnt onto a USB-stick that will be set as a bootable device to run the installer. Proxmox will be installed on a fresh system, where it will be configured for an enterprise network. Users will be added to the base OS, and Proxmox will be updated with a no-subscription repo, NTP server and SSL certificate.
+The Proxmox VE image will be downloaded and burnt onto a USB-stick that will be set as a bootable device to run the installer. Proxmox will be installed on a fresh system, where it will be configured for an enterprise network. Users will be added to the base OS, and Proxmox will be updated with a no-subscription repo, NTP server and SSL certificate.
 
 ## Target Audience
 This repo is for anyone who wants a step-by-step guide on installing Proxmox VE and preparing it for hosting a virtual environment. 
