@@ -6,7 +6,7 @@
 01-12-2025
 
 ## Abstract
-Installing a Proxmox virtual enviroment on an ASUS Nuc PN64
+Installing and configuring Proxmox VE on an ASUS Nuc PN64
 <br>
 
 ## Table of Contents
@@ -38,8 +38,7 @@ This project is about installing and configuring Proxmox VE on an Asus Nuc PN64.
 _[Other projects in our virtual IT-enviroment](#other-projects-in-our-virtual-it-enviroment)_
 
 ## Goals and Objectives
-This is part of a larger ongoing IT-infrastructure project that will use Proxmox as a base. 
-The goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain.
+We will set things up for the virtual environment that we will implement in later projects. This is part of a larger ongoing IT-infrastructure project that will use Proxmox as a base. The end-goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain.
 
 ## Method
 The Proxmox VE image will be downloaded and burnt onto a USB-stick that will be set as a bootable device to run the installer. Proxmox will be installed on a fresh system, where it will be configured for an enterprise network. Users will be added to the base OS, and Proxmox will be updated with a no-subscription repo, NTP server and SSL certificate.
@@ -194,6 +193,11 @@ adduser jonatan
 adduser filip
 ```
 
+Give users passwords:
+```
+sudo passwd jonatan
+```
+
 #### Add Sudo
 
 Install sudo with:
@@ -209,9 +213,7 @@ usermod -aG sudo filip
 
 ### NTP server
 
-Proxmox uses a predefined pool of NTP servers to synchronize time. If this works for you, skip this step. We'll be using a local NTP server instead. 
-
-#### chrony.conf
+Proxmox uses a predefined pool of NTP servers to synchronize time. If this works for you, skip this step. We'll be using our organisations NTP-server. 
 
 Open the chrony.conf config-file:
 ```
@@ -227,7 +229,7 @@ systemctl restart chronyd
 
 ### Obtain an SSL certificate
 
-Proxmox automatically generates a self-signed certificate, but we will instead use a certificate from our own organisation. This process will be different depending on where the certificate is acquired from. 
+Proxmox automatically generates a self-signed certificate, but we will instead use a certificate from our own organisation. This process will be different depending on where the certificate is acquired from, so the details provided here won't  apply to everyone.
 
 #### Generate CSR and private key
 
