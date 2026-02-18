@@ -37,7 +37,7 @@ This project is about installing and configuring Proxmox VE on an Asus Nuc PN64.
 _[Other projects in our virtual IT-enviroment](#other-projects-in-our-virtual-it-enviroment)_
 
 ## Goals and Objectives
-We will set things up for the virtual environment that we will implement in later projects. This is part of a larger ongoing IT-infrastructure project that will use Proxmox as a base. The end-goal of this project is to build a complete IT-environment and gain a deeper understanding of the underlying components and their part in a larger production chain.
+The goal is to prepare a system for a virtual environment that we will implement in later projects.
 
 ## Method
 The Proxmox VE image will be downloaded and burnt onto a USB-stick that will be set as a bootable device to run the installer. Proxmox will be installed on a fresh system, where it will be configured for an enterprise network. Users will be added to the base OS, and Proxmox will be updated with a no-subscription repo, NTP server and SSL certificate.
