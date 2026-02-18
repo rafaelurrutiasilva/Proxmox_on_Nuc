@@ -6,8 +6,7 @@
 01-12-2025
 
 ## Abstract
-Installing and configuring Proxmox VE on an ASUS Nuc PN64
-<br>
+Installing and configuring Proxmox VE on an ASUS Nuc PN64.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -48,34 +47,27 @@ This repo is for anyone who wants a step-by-step guide on installing Proxmox VE 
 This repo is also part of a larger project aimed at people interested in learning about IT infrastructure, and building such an environment from scratch. 
 
 ## Document Status
-This repo is completed.
-This repo is part of a larger ongoing project.
+> [!NOTE]
+> This repo is completed.
+> This repo is part of a larger ongoing project.
 
 ## Disclaimer
 > [!CAUTION]
 > This is intended for learning, testing, and experimentation. The emphasis is not on security or creating an operational environment suitable for production.
-<br>
 
 ## Scope and Limitations
-- ### Scope
-  Step-by-step instructions for installing Proxmox VE and post-installation configuration.
-
-- ### Limitations
-   * This guide is not intended for production-grade, multi-node clusters or advanced HA setups.
-   * Hardware compatibility varies; If unsure, check <a href=https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements>hardware requirements</a> before proceeding. 
-   * Network configuration is for now limited to a single-node setup and may not apply to complex environments.
-   * Instructions may become outdated as software updates; always verify with the official documentation.
-<br>
+* Step-by-step instructions for installing and configuring Proxmox VE. 
+* This guide is not intended for production-grade, multi-node clusters or advanced HA setups.
+* Hardware compatibility varies; If unsure, check <a href=https://www.proxmox.com/en/products/proxmox-virtual-environment/requirements>hardware requirements</a> before proceeding. 
+* Instructions may become outdated as software updates; always verify with the official documentation.
+* Sensetive information will be withheld. This will not hinder participation in the guide.
 
 ## Environment
-- ### Hardware
-   - Asus PN64 ax210NGW 16 GB (See reference).
-   - USB flash drive 64 GB.
-
-- ### Software
-   - Windows 10 was used for downloading Proxmox.
-   - Rufus 3.2 was used for burning the Proxmox .ISO file onto the USB.
-   - Proxmox uses a Debian base with a CLI.
+ - Asus PN64 ax210NGW
+   - Intel® Core™ i7-12700H 
+   - 1TB disk
+   - 64 GB memory
+ - Proxmox VE (9.1.1)
 
 ## Acknowledgments
 We would like to thank <a href=https://github.com/rafaelurrutiasilva>Rafael Urrutia</a> for his continuous support and guidance, the skilled network technichians <a href=https://github.com/robertbrokull>Robert Brokull</a>, <a href=https://github.com/marcusjehrlander>Marcus Jehrlander</a>, Martin Lennartsson, <a href="https://github.com/kd00r">Patrik</a> and the ITi team at SMHI Norrköping. 
@@ -193,10 +185,8 @@ adduser jonatan
 adduser filip
 ```
 
-Give users passwords:
-```
-sudo passwd jonatan
-```
+*adduser* is prefered over *useradd* on Debian-based distros, since it will prompt the user for information and a password, as well as create a home folder by default. 
+
 
 #### Add Sudo
 
