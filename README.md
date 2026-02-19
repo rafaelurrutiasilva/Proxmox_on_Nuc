@@ -47,9 +47,8 @@ This repo is for anyone who wants a step-by-step guide on installing Proxmox VE 
 This repo is also part of a larger project aimed at people interested in learning about IT infrastructure, and building such an environment from scratch. 
 
 ## Document Status
-> [!NOTE]
-> This repo is completed.
-> This repo is part of a larger ongoing project.
+This repository is considered complete and officially published.
+Future improvements, refinements, or corrections may be introduced through controlled updates. Any changes will be versioned and documented in the commit history and/or changelog.
 
 ## Disclaimer
 > [!CAUTION]
