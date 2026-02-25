@@ -1,4 +1,6 @@
-# Installing Proxmox on an Asus PN64
+# Proxmox on Nuc
+
+<!--
 <img alt="" src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/proxmox-on-nuc.png" allign=left><br>
 
 **Installing Proxmox on an Asus PN64** <br>
@@ -7,6 +9,27 @@
 
 ## Abstract
 Installing and configuring Proxmox VE on an ASUS Nuc PN64.
+-->
+<div>
+  <img src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/proxmox-on-nuc.png" width="300" align="left" />
+  <h2>Abstract</h2>
+  <p>
+    Installing and configuring Proxmox VE on an ASUS Nuc PN64.<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <strong>Proxmox on Nuc</strong> <br>
+    <strong>Authors:</strong>
+    <i><a href="https://github.com/Filipanderssondev">Filip Andersson</a></i>
+    and
+    <i><a href="https://github.com/JonatanHogild">Jonatan Högild</a></i>
+    <br>
+    01-12-2025
+    <br clear="left"/>
+  </p>
+</div>
+
 
 ## Table of Contents
 1. [Introduction](#introduction)
