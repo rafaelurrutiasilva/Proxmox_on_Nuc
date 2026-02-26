@@ -14,7 +14,7 @@ Installing and configuring Proxmox VE on an ASUS Nuc PN64.
   <img src="https://github.com/rafaelurrutiasilva/Proxmox_on_Nuc/blob/main/Images/proxmox-on-nuc.png" width="300" align="left" />
   <h2>Abstract</h2>
   <p>
-    Installing and configuring Proxmox VE on an ASUS Nuc PN64.<br>
+    This project describes the installation and configuration of Proxmox VE on an ASUS PN64 NUC to create a foundation for a virtualized IT environment. It covers essential setup steps and results in a stable lab platform ready for future 			    virtualization and automation projects.<br>
 	<br>
 	<br>
 	<br>
